@@ -51,6 +51,21 @@ nav.site { margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap; }
 nav.site a { color: var(--muted); padding: 8px 12px; border-radius: 8px; font-weight: 500; font-size: 0.95rem; }
 nav.site a:hover { color: var(--ink); background: var(--panel); text-decoration: none; }
 
+/* ---------- internal-use banner ---------- */
+.internal-note {
+  border-bottom: 1px solid var(--line);
+  background: rgba(17, 26, 46, 0.55);
+}
+.internal-note p {
+  margin: 0 auto;
+  max-width: 1060px;
+  padding: 9px 20px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.internal-note strong { color: var(--ink); font-weight: 700; }
+
 /* ---------- hero ---------- */
 .hero { padding: 64px 0 34px; text-align: center; }
 .hero .kicker {
