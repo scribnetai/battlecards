@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Battlecards — Know both sides of every deal</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="glyph">⚔️</span>Battlecards</a>
+    <nav class="site">
+      <a href="#cards">Cards</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#changelog">Changelog</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="kicker">SE competitive intel</span>
+    <h1>Know both sides of every deal.</h1>
+    <p class="lede">Head-to-head vendor comparisons built for presales: a neutral feature fight on page one, then each vendor's best case argued on pages two and three — so you can handle any room.</p>
+  </div>
+
+  <section class="block" id="cards">
+    <h2 class="sec">The index</h2>
+    <p class="sec-sub">Pick a matchup. Every card is three pages: the head-to-head, then each side's story.</p>
+    <div class="grid" id="card-grid"></div>
+  </section>
+
+  <section class="block" id="how">
+    <h2 class="sec">How it works</h2>
+    <p class="sec-sub">One card, three pages — the same structure every time.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h3>Head-to-head</h3>
+        <p>Feature-by-feature comparison with an edge call on every row: who wins, who's even, and an SE note on how to use it. No vendor spin.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h3>The case for vendor A</h3>
+        <p>The elevator pitch, why-we-win bullets, discovery questions, trap questions for the competitor, and objection handling — A's best day in the room.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h3>The case for vendor B</h3>
+        <p>The mirror image. Read it before the customer does — every trap on page 3 is a question you need an answer for.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <h2 class="sec">FAQ</h2>
+    <p class="sec-sub">The fine print, up front.</p>
+    <details class="faq">
+      <summary>What is a battlecard, exactly?</summary>
+      <div class="body"><p>A competitive cheat sheet for presales: the positioning, discovery questions, trap questions, and objection handling you need when a deal turns into vendor A vs. vendor B. Built for SE prep — not customer collateral.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Why three pages instead of one comparison table?</summary>
+      <div class="body"><p>A table tells you who wins a feature. It doesn't tell you what the other rep will say in the room. Pages 2 and 3 argue each side's best case so you walk in knowing both scripts — including the traps aimed at your vendor.</p></div>
+    </details>
+    <details class="faq">
+      <summary>How current is the information?</summary>
+      <div class="body"><p>Every card shows a "last verified" date. Specs, pricing, and licensing change fast in this industry — verify against current vendor datasheets before any customer conversation. Vendor claims are labeled as claims.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Can I request a matchup?</summary>
+      <div class="body"><p>Yes — new cards get added to the index as they're built. Ask Sparky for the matchup you need.</p></div>
+    </details>
+    <details class="faq">
+      <summary>Is any of my data collected?</summary>
+      <div class="body"><p>No. Like the other SE tools, this app is 100% client-side. Nothing you view or click leaves your browser.</p></div>
+    </details>
+  </section>
+
+  <section class="block" id="changelog">
+    <h2 class="sec">Changelog</h2>
+    <p class="sec-sub">What shipped, newest first.</p>
+    <details class="changelog" open>
+      <summary>Changelog</summary>
+      <div id="changelog-body"><p>Loading…</p></div>
+    </details>
+  </section>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <span>⚔️ Battlecards — internal SE prep, not customer collateral.</span>
+    <span>Part of the <a href="https://scribnetai.github.io/se-command-center/">SE Command Center</a> toolkit.</span>
+  </div>
+</footer>
+
+<script src="js/cards.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>
