@@ -412,5 +412,136 @@ const CARDS = [
         { q: "Cohesity has better analyst placement.", a: "Analysts score breadth; customers score outcomes. G2's 289 Rubrik reviews at 4.5/5 are the voice that matters — especially on deployment and support." }
       ]
     }
+  },
+  {
+    id: "netapp-vs-everpure-flasharray",
+    category: "Primary Storage",
+    title: "NetApp AFF vs Everpure FlashArray",
+    subtitle: "ONTAP's unified multiprotocol scale-out against Everpure's Evergreen simplicity.",
+    updated: "2026-09-27",
+    a: { vendor: "NetApp", product: "AFF", color: "#0067c5", tag: "Unified block+file+object, Data Fabric cloud story, massive scale-out." },
+    b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
+    features: [
+      {
+        label: "Unified protocols",
+        a: "One ONTAP OS: FC, iSCSI, NVMe-oF, NFS, SMB, and S3 object on the same system — no separate file gateway or silo.",
+        b: "Block-first design; file services on FlashArray are newer and narrower than ONTAP's decades-deep NAS stack.",
+        edge: "a",
+        note: "NetApp's home turf. If the workload mix includes real file serving, don't let the conversation stay on block."
+      },
+      {
+        label: "Non-disruptive upgrades",
+        a: "Clustered data-in-place upgrades where supported; some model jumps have historically been disruptive or required rebuy (Everpure's claim — verify).",
+        b: "Evergreen: controllers refresh non-disruptively with full trade-in credit, no renewal required — the industry's gold standard for this motion.",
+        edge: "b",
+        note: "Pure's sharpest knife in this fight. Make NetApp put the quoted models' upgrade path in writing."
+      },
+      {
+        label: "Hybrid cloud",
+        a: "Cloud Volumes ONTAP, native integrations with AWS/Azure/GCP, BlueXP single pane, SnapMirror to cloud — the deepest cloud story in enterprise storage.",
+        b: "Cloud Block Store and related data services exist, but the cloud portfolio is thinner and younger than NetApp's.",
+        edge: "a",
+        note: "If the customer has a real cloud strategy (not a checkbox), this row does heavy lifting for NetApp."
+      },
+      {
+        label: "Ransomware protection",
+        a: "Autonomous Ransomware Protection (ML-based anomaly detection) built into ONTAP, plus SnapLock compliance WORM.",
+        b: "SafeMode immutable snapshots that even a compromised admin can't delete or encrypt.",
+        edge: "tie",
+        note: "Both are credible. The tie-breaker is recovery testing — ask who has actually restored at scale."
+      },
+      {
+        label: "Management simplicity",
+        a: "Powerful but broad: ONTAP System Manager, BlueXP, Active IQ — more knobs, more learning curve.",
+        b: "Pure1: entire fleet in one cloud console, ~1 year of predictive capacity planning, genuine set-and-forget reputation.",
+        edge: "b",
+        note: "Complexity is ONTAP's tax for its breadth. Small storage teams feel this row the most."
+      },
+      {
+        label: "Scale-out architecture",
+        a: "Up to 24 nodes (12 HA pairs) per cluster with massive effective capacity; add nodes non-disruptively.",
+        b: "Scale-up with per-model capacity ceilings — NetApp claims growth past a ceiling forces a controller step-up (verify against current //X R4 specs).",
+        edge: "a",
+        note: "For customers planning multi-x growth, scale-out vs scale-up is a first-meeting question."
+      },
+      {
+        label: "Storage efficiency",
+        a: "Always-on dedupe, compression, and compaction; NetApp offers written efficiency guarantees.",
+        b: "Always-on inline dedupe + compression, ~5:1 typical; RightSize Guarantee is optional and typically requires an assessment.",
+        edge: "tie",
+        note: "Get both guarantees quoted in writing and compare the fine print, not the headline ratio."
+      },
+      {
+        label: "Synchronous replication",
+        a: "MetroCluster: true synchronous replication, but complex — mirrored aggregates, typically a third site, matched controllers (Everpure's claim — verify).",
+        b: "ActiveCluster stretch plus ActiveDR: simpler setup, active-active, no third-site gymnastics.",
+        edge: "b",
+        note: "If zero-RPO metro is on the requirements list, make NetApp whiteboard the MetroCluster architecture live."
+      },
+      {
+        label: "Support reputation",
+        a: "Broad global reach and deep enterprise bench; quality varies by region and tier.",
+        b: "Consistently top-rated in customer surveys; proactive call-home via Pure1 telemetry.",
+        edge: "b",
+        note: "Acknowledge it, then pivot to your VAR wrap — same play as the Dell card."
+      }
+    ],
+    takeaway: "Sell NetApp on breadth and cloud: one ONTAP for block/file/object, the deepest hybrid-cloud story, and scale-out that grows without ceilings. Sell Everpure on operational simplicity: Evergreen, Pure1, and support. Mixed-workload shops with a real cloud strategy lean NetApp; lean teams that want storage to disappear lean Everpure.",
+    caseA: {
+      label: "The case for NetApp",
+      pitch: "One ONTAP for everything: block, file, and object on a single platform that scales out to 24 nodes and stretches from your data center into every major cloud — no silos, no forklifts, no relearning storage every refresh.",
+      wins: [
+        "<strong>Unified everything</strong>: FC, iSCSI, NVMe-oF, NFS, SMB, S3 — one OS, one skill set, zero protocol silos.",
+        "<strong>Data Fabric</strong>: SnapMirror data between on-prem and AWS/Azure/GCP — the deepest hybrid-cloud story in the industry.",
+        "<strong>Scale-out to 24 nodes</strong> (12 HA pairs): add performance and capacity non-disruptively instead of outgrowing a dual-controller box.",
+        "<strong>Autonomous Ransomware Protection</strong> with ML detection, plus SnapLock compliance WORM for regulated data.",
+        "Decades of enterprise trust and the largest NAS installed base — the known quantity your team already knows."
+      ],
+      discover: [
+        "How much of your data is file vs block — and are you managing them on separate systems today?",
+        "What's your cloud strategy — burst, tier, DR, or 'we'll figure it out later'?",
+        "How much growth are you planning over this array's life — 2x, 5x?",
+        "When did you last do a controller upgrade, and what did it cost in downtime and labor?"
+      ],
+      traps: [
+        "How do you serve file workloads from FlashArray — and how long has that file stack been production-grade?",
+        "Show me the cloud-native version of this array — not a VM in a cloud, the real thing.",
+        "What happens when we outgrow this model's ceiling — new controllers, and at what cost?",
+        "Walk me through your metro stretch setup — how many sites, and how much professional services?"
+      ],
+      objections: [
+        { q: "ONTAP is complex to manage.", a: "It's broad because it does more — and BlueXP plus Active IQ closed the simplicity gap. One team running block, file, and cloud from one pane beats three silos." },
+        { q: "Evergreen means no forklift upgrades, ever.", a: "Clustered ONTAP does data-in-place upgrades across generations — and gives you scale-out growth a dual-controller box can't match. Ask them to put the ceiling in writing." },
+        { q: "Pure's support is rated higher.", a: "NetApp's global support scale is unmatched for multinational estates — and our VAR engineers wrap either array. You're buying our team, not just theirs." }
+      ]
+    },
+    caseB: {
+      label: "The case for Everpure",
+      pitch: "The array you stop thinking about: Evergreen upgrades it without forklifts, Pure1 runs the whole fleet from one cloud console, SafeMode makes ransomware irrelevant — and support that calls you first.",
+      wins: [
+        "<strong>Evergreen</strong>: non-disruptive controller refreshes with full trade-in credit — the forklift is extinct.",
+        "<strong>Pure1</strong>: every array in one pane, a year of predictive capacity planning, zero babysitting.",
+        "<strong>SafeMode</strong> snapshots: immutable, undeletable, unencryptable — even by a compromised admin.",
+        "<strong>ActiveCluster</strong> stretch without MetroCluster's complexity — no third site, no mirrored-aggregate gymnastics.",
+        "The highest-rated support in enterprise storage, with all software included flat — no license archaeology."
+      ],
+      discover: [
+        "How many hours a month does your team spend on storage admin, upgrades, and tuning?",
+        "Do you run file and block on separate systems — and what does that cost in licenses and labor?",
+        "Have you ever tested a full ransomware restore — and how long did it take?",
+        "What's your controller upgrade plan at year 4 — and who's paying for it?"
+      ],
+      traps: [
+        "How many ONTAP versions and hardware generations are in your estate right now?",
+        "Price the all-in software stack — how many line items are licenses vs included?",
+        "Draw the MetroCluster architecture for our two sites — what's the third-site requirement?",
+        "When does this model hit its capacity ceiling, and what does the next step cost?"
+      ],
+      objections: [
+        { q: "We need file services too.", a: "FlashArray file services cover the common cases — and most 'unified' ONTAP estates still run separate clusters per protocol anyway. Scope the actual file workload before buying the Swiss-army story." },
+        { q: "NetApp's cloud story is deeper.", a: "For bulk cloud tiering, sure. For primary storage that stays on-prem, Pure1 plus Cloud Block Store covers the real use cases — without the BlueXP console sprawl." },
+        { q: "NetApp scales out further.", a: "How many shops actually run 24-node clusters? For the 95% that don't, two controllers that upgrade themselves beat a cluster you have to feed." }
+      ]
+    }
   }
 ];
