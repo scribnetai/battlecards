@@ -8,3 +8,4 @@
 - Added fourth card: NetApp AFF vs Everpure FlashArray (Primary Storage) — ONTAP unified/scale-out vs Evergreen simplicity.
 - Fixed card tab deep-links: in-page hash changes (back/forward, anchor jumps) now switch tabs instead of only working on full page load.
 - Added five security battlecards: CrowdStrike Falcon vs Palo Alto Cortex XDR (Endpoint Security), Palo Alto NGFW vs Fortinet FortiGate (Network Security), Zscaler vs Palo Alto Prisma Access (SASE), Okta vs Microsoft Entra ID (Identity), Wiz vs Palo Alto Cortex Cloud (Cloud Security). Vendor claims labeled as claims; naming follows 2026 current branding (Entra ID, Cortex Cloud).
+- Added: above-the-fold "Internal SE prep — not customer collateral" banner on index and card pages.
