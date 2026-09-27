@@ -1,0 +1,23 @@
+{
+  "name": "Battlecards",
+  "short_name": "Battlecards",
+  "description": "Competitive battlecards for presales SEs \u2014 know both sides of every deal.",
+  "id": "https://battlecards.scribnet.io/",
+  "start_url": "https://battlecards.scribnet.io/",
+  "scope": "https://battlecards.scribnet.io/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
