@@ -18,6 +18,10 @@ if (!card) {
   wireTabs(card);
   const h = location.hash.replace("#", "");
   if (["p1", "p2", "p3"].includes(h)) showPage(h);
+  window.addEventListener("hashchange", () => {
+    const nh = location.hash.replace("#", "");
+    if (["p1", "p2", "p3"].includes(nh)) showPage(nh);
+  });
 }
 
 function edgeBadge(f, card) {
