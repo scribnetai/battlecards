@@ -1,6 +1,6 @@
 # Battlecards
 
-Competitive battlecards for presales SEs. Live at https://scribnetai.github.io/battlecards/
+Competitive battlecards for presales SEs. Live at https://battlecards.scribnet.io/
 
 Each battlecard is three pages:
 1. **Head-to-head** — neutral feature-by-feature comparison with an edge call per row.
