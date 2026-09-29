@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-29 — Battlecard update: Cohesity vs Rubrik
+- Added "Agentic AI resilience" feature row: Cohesity Agent Resilience (discovers, protects, and recovers agent memory/config plus the data systems agents act on; select customers now, GA end of 2026) vs Rubrik MCP (exposes the Security Cloud API schema to customer AI agents for multi-step recovery/compliance workflows; private preview now, GA Oct 2026). Row researched from both vendors' announcements, not just the headlines. Card date bumped to 2026-09-29.
+
+
 ## 2026-09-28 — Canonical subdomain links
 - Replaced legacy `scribnetai.github.io/<repo>/` links with canonical
   `https://<repo>.scribnet.io/` URLs (the old URLs 301-redirect, but docs and
