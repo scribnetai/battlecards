@@ -280,7 +280,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-    updated: "2026-09-27",
+    updated: "2026-09-29",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -346,6 +346,13 @@ const CARDS = [
         b: "Leader with dominant cyber-resilience mindshare; the name boards ask for by name.",
         edge: "a",
         note: "Analyst ink favors Cohesity; brand heat favors Rubrik. Know which one your buyer's boss reads."
+      },
+      {
+        label: "Agentic AI resilience",
+        a: "Agent Resilience (announced Sept 2026 at Catalyst; select customers now, GA end of 2026): discovers, protects, and recovers agent memory and configuration — plus the databases and file systems the agents act on — using immutable snapshots and clean-room recovery. Launch support for Amazon Bedrock AgentCore/Agents; Microsoft and Google platforms on the roadmap. Cohesity's pitch: detection can flag a rogue agent but can't undo what it changed (their survey: 56% of orgs feel unprepared to contain unintended agent actions).",
+        b: "Rubrik MCP (Model Context Protocol), announced Sept 2026; private preview now, GA targeted Oct 2026: exposes the Rubrik Security Cloud API schema to customer AI agents so agents can run multi-step recovery and compliance workflows as reusable, deterministic tools across any AI client. RBAC parity, configurable permissions, OWASP MCP Top 10-aligned guardrails. Built with Anthropic; Rubrik AI is used by ~1/3 of customers.",
+        edge: "tie",
+        note: "Two different plays on the same trend: Rubrik lets agents drive recovery (agents call Rubrik); Cohesity recovers the agents themselves when they go rogue. Ask the customer which problem they actually have. Both are pre-GA — don't let either side sell it as shipping today."
       },
       {
         label: "Pricing",
