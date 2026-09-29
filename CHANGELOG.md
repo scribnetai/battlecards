@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-09-29 — Prompts page added to the app-switcher header
+
+- The scribnet.io `/prompts.html` workflow-prompts page is now one click away from the app-switcher dropdown in the header, alongside the other destinations.
 ## 2026-09-29 — Battlecard update: Cohesity vs Rubrik
 - Added "Agentic AI resilience" feature row: Cohesity Agent Resilience (discovers, protects, and recovers agent memory/config plus the data systems agents act on; select customers now, GA end of 2026) vs Rubrik MCP (exposes the Security Cloud API schema to customer AI agents for multi-step recovery/compliance workflows; private preview now, GA Oct 2026). Row researched from both vendors' announcements, not just the headlines. Card date bumped to 2026-09-29.
 
