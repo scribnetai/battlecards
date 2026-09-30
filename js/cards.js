@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-09-27",
+    updated: "2026-09-30",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -226,7 +226,8 @@ const CARDS = [
         "Per-<strong>node</strong> pricing vs. per-<strong>core</strong> with 16-core minimums per CPU and a 72-core minimum order.",
         "<strong>Prism Central</strong>: one console, no vCenter, built for generalist teams.",
         "<strong>Nutanix Move</strong> automates migration — 2,700+ VMware customers moved in FY25.",
-        "<strong>NC2</strong>: take your licenses to AWS/Azure/GCP bare metal for DR and burst."
+        "<strong>NC2</strong>: take your licenses to AWS/Azure/GCP bare metal for DR and burst.",
+        "<strong>Leader, 2026 Gartner MQ for Distributed Hybrid Infrastructure</strong> (Sept 30, 2026) — Ability to Execute + Completeness of Vision; NCP external-storage support now GA for Dell PowerStore, updated for Everpure FlashArray/Dell PowerFlex, limited for NetApp ONTAP.",
       ],
       discover: [
         "What are you actually paying per core under VCF — list or negotiated?",
@@ -556,7 +557,7 @@ const CARDS = [
     category: "Endpoint Security",
     title: "CrowdStrike Falcon vs Palo Alto Cortex XDR",
     subtitle: "The endpoint pure-play against the platform consolidator.",
-    updated: "2026-09-27",
+    updated: "2026-09-30",
     a: { vendor: "CrowdStrike", product: "Falcon", color: "#e01f26", tag: "Single-agent platform, Charlotte AI, Falcon Complete MDR." },
     b: { vendor: "Palo Alto", product: "Cortex XDR", color: "#f26522", tag: "Network+endpoint+cloud telemetry, XSIAM, Unit 42." },
     features: [
@@ -633,7 +634,8 @@ const CARDS = [
         "<strong>MITRE Dec 2025</strong>: 100% detection, 100% protection, zero false positives (CrowdStrike's claim).",
         "<strong>Falcon Complete</strong>: 24/7 analyst-run MDR with median 1-minute containment and a Breach Prevention Warranty (claims).",
         "<strong>Charlotte Agentic SOAR</strong>: agentic SOC with bidirectional MCP and human-in-the-loop autonomy (2026).",
-        "<strong>Next-Gen SIEM</strong>: retire the legacy SIEM on the same agent — claimed up to 50% storage cost reduction (claim)."
+        "<strong>Next-Gen SIEM</strong>: retire the legacy SIEM on the same agent — claimed up to 50% storage cost reduction (claim).",
+        "<strong>Falcon in the OpenAI Marketplace</strong> (Sept 29, 2026) — eligible OpenAI customers can buy Falcon with existing OpenAI commitments; Falcon Guardian extends runtime protection to Codex agents.",
       ],
       discover: [
         "How are you stitching endpoint, identity, and cloud signals today — one console or several?",
