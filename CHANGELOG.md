@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-30
+
+- Nutanix vs Broadcom VMware: added dated win bullet — Nutanix named a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure (Sept 30, 2026), with NCP external-storage support now GA for Dell PowerStore.
+- CrowdStrike vs Cortex XDR: added dated win bullet — Falcon platform in the OpenAI Marketplace (Sept 29, 2026); eligible OpenAI customers can buy Falcon with existing OpenAI commitments; Falcon Guardian runtime protection for Codex agents.
+
 ## 2026-09-29 — Full SEO head tags
 
 - Added canonical URL, meta description, Open Graph + Twitter Card tags, and JSON-LD structured data (`WebApplication`) to the page head.
