@@ -238,3 +238,7 @@ button.brand:hover{background:rgba(255,255,255,.05);text-decoration:none}
 .brand-item .bi{font-size:1.05rem;line-height:1}
 .brand-item.is-current{color:var(--accent2);font-weight:700}
 .brand-item .cur{margin-left:auto;font-size:.7rem;color:var(--muted);font-weight:400}
+
+/* Hash deep-link highlight (js/app.js routeCardHash) */
+.bcard { outline: 2px solid transparent; outline-offset: 4px; transition: outline-color 1s ease; }
+.bcard.flash { outline-color: var(--accent); }

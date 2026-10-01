@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-01
+
+- Index page: hash deep-link routing — `battlecards.scribnet.io/#<card-id>` now scrolls to and briefly highlights that card in the grid (section anchors #cards/#how/#faq unchanged).
+
 ## 2026-09-30
 
 - Nutanix vs Broadcom VMware: added dated win bullet — Nutanix named a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure (Sept 30, 2026), with NCP external-storage support now GA for Dell PowerStore.

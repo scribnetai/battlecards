@@ -8,7 +8,7 @@ function esc(s) {
 (function renderIndex() {
   const grid = document.getElementById("card-grid");
   grid.innerHTML = CARDS.map((c) => `
-    <a class="bcard" href="battlecard.html?id=${esc(c.id)}">
+    <a class="bcard" id="card-${esc(c.id)}" href="battlecard.html?id=${esc(c.id)}">
       <div class="cat">${esc(c.category)}</div>
       <div class="vsline">
         <span class="dot" style="background:${esc(c.a.color)};color:${esc(c.a.color)}"></span>
@@ -40,3 +40,19 @@ fetch("CHANGELOG.md", { cache: "no-store" })
   .catch(() => {
     document.getElementById("changelog-body").innerHTML = "<p>Changelog unavailable.</p>";
   });
+
+/* Hash deep-link routing: index.html#<card-id> scrolls to and briefly highlights
+   that card in the grid. Section hashes (#cards, #how, #faq) are untouched —
+   native browser scrolling handles those. */
+function routeCardHash() {
+  document.querySelectorAll(".bcard.flash").forEach((el) => el.classList.remove("flash"));
+  const id = location.hash.replace(/^#/, "");
+  if (!id) return;
+  const el = document.getElementById("card-" + id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "center" });
+  el.classList.add("flash");
+  setTimeout(() => el.classList.remove("flash"), 2400);
+}
+window.addEventListener("hashchange", routeCardHash);
+routeCardHash();
