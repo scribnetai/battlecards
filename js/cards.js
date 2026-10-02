@@ -426,7 +426,7 @@ const CARDS = [
     category: "Primary Storage",
     title: "NetApp AFF vs Everpure FlashArray",
     subtitle: "ONTAP's unified multiprotocol scale-out against Everpure's Evergreen simplicity.",
-    updated: "2026-09-27",
+    updated: "2026-10-02",
     a: { vendor: "NetApp", product: "AFF", color: "#0067c5", tag: "Unified block+file+object, Data Fabric cloud story, massive scale-out." },
     b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
     features: [
@@ -492,6 +492,13 @@ const CARDS = [
         b: "Consistently top-rated in customer surveys; proactive call-home via Pure1 telemetry.",
         edge: "b",
         note: "Acknowledge it, then pivot to your VAR wrap — same play as the Dell card."
+      },
+      {
+        label: "Agentic AI data readiness",
+        a: "NetApp answers AI storage with ONTAP data services and the NetApp Novus AI storage architecture (announced Sept 29, 2026: zettabyte-scale file system, 100 TB/s scale-out — NetApp's claim; initial release is Novus Data Director on qualified Supermicro infra with ONTAP via AFF A90). NetApp's data-classification story for agents is less visible than Everpure's.",
+        b: "Everpure Data Intelligence with native MCP integration (announced Sept 30, 2026; available this October per Everpure): AI agents and security tools query live data catalogs in natural language and get sensitivity classifications back — no custom API work. Privacy-First File Intelligence maps share access and staleness without reading contents. PureKVA on FlashBlade pre-stages KV cache directly into GPU memory for up to 20x faster time-to-first-token (Everpure's claim). Always-On DeepReduce continuous sub-block compression, plus a token-optimization reference architecture on open-weight models.",
+        edge: "b",
+        note: "In AI-storage deals, ask who owns governed agent data access — Everpure has a concrete October ship date while NetApp Novus is early. Pin down two facts: PureKVA is FlashBlade-only, not FlashArray, so the TTFT claim only applies if FlashBlade is in the deal; and ask for TTFT proof on the customer's own dataset before letting the 20x claim into a proposal."
       }
     ],
     takeaway: "Sell NetApp on breadth and cloud: one ONTAP for block/file/object, the deepest hybrid-cloud story, and scale-out that grows without ceilings. Sell Everpure on operational simplicity: Evergreen, Pure1, and support. Mixed-workload shops with a real cloud strategy lean NetApp; lean teams that want storage to disappear lean Everpure.",
