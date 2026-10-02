@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-02
+
+- NetApp AFF vs Everpure FlashArray: added 'Agentic AI data readiness' features row — Everpure Data Intelligence native MCP integration, Privacy-First File Intelligence, PureKVA GPU pre-staging (announced Sept 30, available this October per Everpure).
+
 ## 2026-10-01
 
 - Index page: hash deep-link routing — `battlecards.scribnet.io/#<card-id>` now scrolls to and briefly highlights that card in the grid (section anchors #cards/#how/#faq unchanged).
