@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-09-30",
+    updated: "2026-10-05",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -156,9 +156,9 @@ const CARDS = [
       {
         label: "Hypervisor cost",
         a: "AHV (KVM-based) included free with the platform.",
-        b: "ESXi bundled inside VCF/VVF subscription; standalone vSphere Standard discontinued with no renewal path.",
+        b: "ESXi bundled inside VCF/VVF subscription. Standalone vSphere Standard was discontinued with no renewal path — but Broadcom now says an updated vSphere Standard is coming, details expected Oct 13–14 at VMware Explore Frankfurt (announced, not yet GA).",
         edge: "a",
-        note: "Customers who only ever used vSphere Standard got the worst of the transition — start there."
+        note: "Watch what the refreshed vSphere Standard actually ships: ask whether it restores a real renewal path for small shops, at what price, and whether renewal terms are predictable. Until it ships, vSphere Standard shops are still being pushed toward VCF."
       },
       {
         label: "Management",
@@ -215,6 +215,13 @@ const CARDS = [
         b: "Broadcom retains the vast majority of its largest customers; openly less interested in chasing small accounts.",
         edge: "tie",
         note: "Enterprise incumbency vs. midmarket momentum — match the story to the account size in front of you."
+      },
+      {
+        label: "AI infrastructure",
+        a: "Oct 1, 2026: acquired Ryax Technologies (France) — AI-driven compute orchestration with GPU utilization and AI-aware smart scheduling, integrating into Nutanix Kubernetes Platform (NKP) and Nutanix Enterprise AI (NAI). Pitch: run agentic AI cheaper across hybrid footprints (vendor claim).",
+        b: "Private AI Foundation with NVIDIA: VCF-native genAI stack with NVIDIA AI Enterprise for running AI on private cloud.",
+        edge: "tie",
+        note: "Both vendors now pitch 'run AI agents where your data lives.' Nutanix's angle is inference economics across hybrid GPU footprints — ask what inference actually costs per workload, not which model they're running. The Ryax integration is announced, not shipped: don't put it in an active quote."
       }
     ],
     takeaway: "Lead with the customer's renewal date and real per-core cost. If they're a full-stack VCF shop using NSX and Aria, defend VMware and negotiate the rate. If they're a vSphere-Standard-style shop paying for bundle they don't use, Nutanix's per-node math and free AHV usually win the 3-year TCO — but only after honest migration costing.",
