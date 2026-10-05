@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-05
+
+- Nutanix vs Broadcom VMware: added 'AI infrastructure' features row — Nutanix's Oct 1, 2026 acquisition of Ryax Technologies (GPU utilization + AI-aware smart scheduling for NKP/NAI) vs. VMware Private AI Foundation with NVIDIA; edge tie. Also updated the 'Hypervisor cost' row: standalone vSphere Standard was discontinued, but Broadcom now says an updated vSphere Standard is coming (details expected Oct 13-14 at VMware Explore Frankfurt; announced, not yet GA).
+
 ## 2026-10-02
 
 - NetApp AFF vs Everpure FlashArray: added 'Agentic AI data readiness' features row — Everpure Data Intelligence native MCP integration, Privacy-First File Intelligence, PureKVA GPU pre-staging (announced Sept 30, available this October per Everpure).
