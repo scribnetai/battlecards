@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-07
+
+- Zscaler vs Palo Alto Prisma Access: added 'Vulnerability shielding (disclose→patch gap)' features row — Zscaler Autonomous Application Shield (Early Access, Oct 5, 2026 announcement) + IBM/Red Hat Lightwell validated open-source remediation for the disclosure-to-patch window vs. Prisma Access inline threat prevention; edge Zscaler, with the Early Access/partner caveats carried in the row note.
+
 ## 2026-10-05
 
 - Nutanix vs Broadcom VMware: added 'AI infrastructure' features row — Nutanix's Oct 1, 2026 acquisition of Ryax Technologies (GPU utilization + AI-aware smart scheduling for NKP/NAI) vs. VMware Private AI Foundation with NVIDIA; edge tie. Also updated the 'Hypervisor cost' row: standalone vSphere Standard was discontinued, but Broadcom now says an updated vSphere Standard is coming (details expected Oct 13-14 at VMware Explore Frankfurt; announced, not yet GA).
