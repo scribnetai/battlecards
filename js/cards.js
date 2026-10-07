@@ -834,7 +834,7 @@ const CARDS = [
     category: "SASE",
     title: "Zscaler vs Palo Alto Prisma Access",
     subtitle: "The born-cloud zero-trust exchange against the PAN-OS policy cloud.",
-    updated: "2026-09-27",
+    updated: "2026-10-07",
     a: { vendor: "Zscaler", product: "Zero Trust Exchange", color: "#0090d4", tag: "Born-cloud SSE, true ZTNA, simple per-user licensing." },
     b: { vendor: "Palo Alto", product: "Prisma Access", color: "#f26522", tag: "PAN-OS policy in the cloud, native SD-WAN, platform scale. (Prisma SASE.)" },
     features: [
@@ -893,6 +893,13 @@ const CARDS = [
         b: "Strata Cloud Manager; same PAN-OS policies, App-ID, and User-ID shared between on-prem NGFWs and Prisma Access.",
         edge: "tie",
         note: "Palo Alto for existing firewall shops (policy parity); Zscaler for net-new or greenfield simplicity. Incumbent decides."
+      },
+      {
+        label: "Vulnerability shielding (disclose→patch gap)",
+        a: "Autonomous Application Shield on the Zero Trust Exchange: continuous per-app exposure assessment, then adaptive inline exploit-blocking applied in real time when a CVE drops — paired with IBM/Red Hat Lightwell for validated open-source remediations at the source (Oct 2026 announcement). Shield is in Early Access — Zscaler's claim.",
+        b: "Prisma Access inline threat prevention and ZTNA policy block known exploit attempts at the gateway; no equivalent vendor-paired validated open-source remediation pipeline (verify against the latest Prisma roadmap).",
+        edge: "a",
+        note: "Strong talk track: 'protect now, patch later.' But Shield is Early Access and the Lightwell half is a partnership — verify GA status, packaging, and whether Lightwell remediation needs separate IBM/Red Hat licensing before quoting. Discovery question: 'How long does your patch cycle run from disclosure to deployment?'"
       },
       {
         label: "Pricing",
