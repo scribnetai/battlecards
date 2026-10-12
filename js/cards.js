@@ -288,7 +288,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-    updated: "2026-09-29",
+    updated: "2026-10-12",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -363,6 +363,13 @@ const CARDS = [
         note: "Two different plays on the same trend: Rubrik lets agents drive recovery (agents call Rubrik); Cohesity recovers the agents themselves when they go rogue. Ask the customer which problem they actually have. Both are pre-GA — don't let either side sell it as shipping today."
       },
       {
+        label: "AI code-security red-teaming",
+        a: "No equivalent: Agent Resilience recovers agents and the data they act on; the AI Resilience Academy is education, not tooling. Nothing here red-teams customer code.",
+        b: "Code Guardian (announced Oct 9, 2026; private preview, select design partners): Claude Mythos 5 inside Rubrik's security harness red-teams a cloned, air-gapped copy of the customer codebase — multi-step attack-chain discovery across files, services, identity roles, and cloud perimeters; findings verified for exploitability and scored by business criticality; instant codebase recovery as the safety net. Delivered through Project Hourglass partners (AHEAD, Trace3, WWT added Oct 2026) with certification tracks and direct engineering access.",
+        edge: "b",
+        note: "Rubrik's claim is that static tools miss chained vulnerabilities this harness catches — preview-only, so ask for a live red-team report, not a deck. Discovery question: 'where do your AI-generated codebases get security-tested before merge?' If the answer is nowhere, this is a land-and-expand wedge with the engineering org."
+      },
+      {
         label: "Pricing",
         a: "Slightly less costly in peer comparisons; valued for long-term retention economics.",
         b: "Premium pricing with high minimums — justified by users for cyber-resilience outcomes, but a barrier for smaller shops.",
@@ -433,7 +440,7 @@ const CARDS = [
     category: "Primary Storage",
     title: "NetApp AFF vs Everpure FlashArray",
     subtitle: "ONTAP's unified multiprotocol scale-out against Everpure's Evergreen simplicity.",
-    updated: "2026-10-02",
+    updated: "2026-10-12",
     a: { vendor: "NetApp", product: "AFF", color: "#0067c5", tag: "Unified block+file+object, Data Fabric cloud story, massive scale-out." },
     b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
     features: [
@@ -502,7 +509,7 @@ const CARDS = [
       },
       {
         label: "Agentic AI data readiness",
-        a: "NetApp answers AI storage with ONTAP data services and the NetApp Novus AI storage architecture (announced Sept 29, 2026: zettabyte-scale file system, 100 TB/s scale-out — NetApp's claim; initial release is Novus Data Director on qualified Supermicro infra with ONTAP via AFF A90). NetApp's data-classification story for agents is less visible than Everpure's.",
+        a: "NetApp answers AI storage with ONTAP data services, the NetApp Novus AI storage architecture (announced Sept 29, 2026: zettabyte-scale file system, 100 TB/s scale-out \u2014 NetApp\u2019s claim; initial release is Novus Data Director on qualified Supermicro infra with ONTAP via AFF A90), and now AIDE \u2014 an AI Data Engine SaaS announced at NetApp Insight 2026 that maps, catalogs, and classifies unstructured data across NetApp and heterogeneous storage in place, without copying files. That closes the data-classification gap Everpure\u2019s Data Intelligence was exploiting.",
         b: "Everpure Data Intelligence with native MCP integration (announced Sept 30, 2026; available this October per Everpure): AI agents and security tools query live data catalogs in natural language and get sensitivity classifications back — no custom API work. Privacy-First File Intelligence maps share access and staleness without reading contents. PureKVA on FlashBlade pre-stages KV cache directly into GPU memory for up to 20x faster time-to-first-token (Everpure's claim). Always-On DeepReduce continuous sub-block compression, plus a token-optimization reference architecture on open-weight models.",
         edge: "b",
         note: "In AI-storage deals, ask who owns governed agent data access — Everpure has a concrete October ship date while NetApp Novus is early. Pin down two facts: PureKVA is FlashBlade-only, not FlashArray, so the TTFT claim only applies if FlashBlade is in the deal; and ask for TTFT proof on the customer's own dataset before letting the 20x claim into a proposal."
@@ -517,7 +524,8 @@ const CARDS = [
         "<strong>Data Fabric</strong>: SnapMirror data between on-prem and AWS/Azure/GCP — the deepest hybrid-cloud story in the industry.",
         "<strong>Scale-out to 24 nodes</strong> (12 HA pairs): add performance and capacity non-disruptively instead of outgrowing a dual-controller box.",
         "<strong>Autonomous Ransomware Protection</strong> with ML detection, plus SnapLock compliance WORM for regulated data.",
-        "Decades of enterprise trust and the largest NAS installed base — the known quantity your team already knows."
+        "Decades of enterprise trust and the largest NAS installed base — the known quantity your team already knows.",
+        "<strong>Keystone Sovereignty (Oct 2026)</strong>: data, logs, backups, telemetry, and support stay inside customer-specified geographic boundaries with EU-based support \u2014 a ready-made answer to regulated-industry sovereignty RFPs."
       ],
       discover: [
         "How much of your data is file vs block — and are you managing them on separate systems today?",
