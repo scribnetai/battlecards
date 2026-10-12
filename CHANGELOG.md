@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-12
+- Cohesity vs Rubrik: added "AI code-security red-teaming" row (Code Guardian, private preview).
+- NetApp vs Everpure FlashArray: "Agentic AI data readiness" row updated with AIDE; added Keystone Sovereignty dated win bullet.
+
 ## 2026-10-07
 
 - Zscaler vs Palo Alto Prisma Access: added 'Vulnerability shielding (disclose→patch gap)' features row — Zscaler Autonomous Application Shield (Early Access, Oct 5, 2026 announcement) + IBM/Red Hat Lightwell validated open-source remediation for the disclosure-to-patch window vs. Prisma Access inline threat prevention; edge Zscaler, with the Early Access/partner caveats carried in the row note.
