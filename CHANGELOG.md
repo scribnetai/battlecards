@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-13
+- Nutanix vs Broadcom VMware: added Hypervisor security feature row for VMware HyperArmor (announced Oct 13, 2026 - host virtual patching, known-good execution baseline, ESX SSH MFA; GA/pricing not stated). Card updated date bumped.
+
 ## 2026-10-12
 - Cohesity vs Rubrik: added "AI code-security red-teaming" row (Code Guardian, private preview).
 - NetApp vs Everpure FlashArray: "Agentic AI data readiness" row updated with AIDE; added Keystone Sovereignty dated win bullet.
