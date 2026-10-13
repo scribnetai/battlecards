@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-10-05",
+    updated: "2026-10-13",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -222,6 +222,13 @@ const CARDS = [
         b: "Private AI Foundation with NVIDIA: VCF-native genAI stack with NVIDIA AI Enterprise for running AI on private cloud.",
         edge: "tie",
         note: "Both vendors now pitch 'run AI agents where your data lives.' Nutanix's angle is inference economics across hybrid GPU footprints — ask what inference actually costs per workload, not which model they're running. The Ryax integration is announced, not shipped: don't put it in an active quote."
+      },
+      {
+        label: "Hypervisor security",
+        a: "AHV hardening and Flow microsegmentation; no announced AHV equivalent to host-level known-good execution allowlisting or hypervisor SSH MFA.",
+        b: "VMware HyperArmor (announced Oct 13, 2026; GA date and pricing not stated in the release): host-layer virtual patching for ESX 8.x+ with no host reboot or in-guest agents (vendor claim), a known-good execution baseline that blocks unauthorized executables/scripts, and MFA in the ESX SSH login path. Complements vDefend's network-layer virtual patching.",
+        edge: "b",
+        note: "Discovery question for VCF shops: how painful are ESX patch windows and stolen-root-credential risk today? If both hurt, HyperArmor is real renewal-defense material. Do not quote it as GA or bundled until Broadcom confirms availability and licensing, and do not let Broadcom frame AHV as unprotected by omission — AHV's smaller, KVM-based attack surface is a different risk profile, not an absence of controls."
       }
     ],
     takeaway: "Lead with the customer's renewal date and real per-core cost. If they're a full-stack VCF shop using NSX and Aria, defend VMware and negotiate the rate. If they're a vSphere-Standard-style shop paying for bundle they don't use, Nutanix's per-node math and free AHV usually win the 3-year TCO — but only after honest migration costing.",
