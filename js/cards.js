@@ -718,7 +718,7 @@ const CARDS = [
     category: "Network Security",
     title: "Palo Alto NGFW vs Fortinet FortiGate",
     subtitle: "The precision platform against the performance-per-dollar machine.",
-    updated: "2026-09-27",
+    updated: "2026-10-14",
     a: { vendor: "Palo Alto", product: "NGFW", color: "#f26522", tag: "App-ID precision, PAN-OS platform, Precision AI prevention." },
     b: { vendor: "Fortinet", product: "FortiGate", color: "#ee3124", tag: "FortiASIC performance, bundled value, Security Fabric convergence." },
     features: [
@@ -795,7 +795,8 @@ const CARDS = [
         "<strong>Precision AI</strong>: inline ML blocks zero-days without signatures; WildFire bare-metal sandbox verdicts in seconds (claim).",
         "<strong>PA-500 series + FE400 ASIC</strong>: commissioned Miercom testing claims lower cost per protected Mbps than FortiGate G at branch tiers (attribute as commissioned).",
         "<strong>Panorama</strong>: policy, logging, and ACC for up to 5,000 firewalls in one console — Fortinet splits management and analytics.",
-        "<strong>Platform</strong>: same PAN-OS from PA-400 to PA-5500, VM/CN-Series, Prisma SASE, native Cortex XSIAM/XDR integration."
+        "<strong>Platform</strong>: same PAN-OS from PA-400 to PA-5500, VM/CN-Series, Prisma SASE, native Cortex XSIAM/XDR integration.",
+        "<strong>NHS England Secure Boundary (Oct 2026)</strong>: Palo Alto provides the cloud-based perimeter technology (IBM leads migration/onboarding) for a nationally funded service described as covering 2M computers and 55,000 health-data organisations — a consolidation reference for retiring local firewalls and overlapping tools."
       ],
       discover: [
         "What percentage of your traffic is encrypted — and are you doing full TLS inspection today?",
