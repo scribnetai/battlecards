@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-14
+- Palo Alto NGFW vs Fortinet FortiGate: added NHS England Secure Boundary dated win bullet to the Palo Alto case (Oct 2026). Card updated date bumped.
+
 ## 2026-10-13
 - Nutanix vs Broadcom VMware: added Hypervisor security feature row for VMware HyperArmor (announced Oct 13, 2026 - host virtual patching, known-good execution baseline, ESX SSH MFA; GA/pricing not stated). Card updated date bumped.
 
