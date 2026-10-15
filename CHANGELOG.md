@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-15
+- Palo Alto NGFW vs Fortinet FortiGate: added dated Fortinet win — Atos global alliance (Oct 14, 2026) expands Fortinet resell + managed-security framework globally.
+
 ## 2026-10-14
 - Palo Alto NGFW vs Fortinet FortiGate: added NHS England Secure Boundary dated win bullet to the Palo Alto case (Oct 2026). Card updated date bumped.
 
