@@ -718,7 +718,7 @@ const CARDS = [
     category: "Network Security",
     title: "Palo Alto NGFW vs Fortinet FortiGate",
     subtitle: "The precision platform against the performance-per-dollar machine.",
-    updated: "2026-10-14",
+    updated: "2026-10-15",
     a: { vendor: "Palo Alto", product: "NGFW", color: "#f26522", tag: "App-ID precision, PAN-OS platform, Precision AI prevention." },
     b: { vendor: "Fortinet", product: "FortiGate", color: "#ee3124", tag: "FortiASIC performance, bundled value, Security Fabric convergence." },
     features: [
@@ -824,7 +824,8 @@ const CARDS = [
         "<strong>Price/performance</strong>: independent 2026 comparisons award Fortinet cost per protected Mbps; street entry from a few hundred dollars (verify).",
         "<strong>Secure SD-WAN included</strong>: in FortiOS on every box at no additional license, plus native ZTNA access proxy.",
         "<strong>G-series momentum</strong>: 3500G/400G added May 2026; 3800G anchors the Secure AI Data Center story (verify).",
-        "<strong>Security Fabric</strong>: firewall, switching, Wi-Fi, NAC, and SASE converging — fewer vendors for lean teams."
+        "<strong>Security Fabric</strong>: firewall, switching, Wi-Fi, NAC, and SASE converging — fewer vendors for lean teams.",
+        "<strong>Atos global alliance (Oct 14, 2026)</strong>: Atos moved its Fortinet partnership from country-led to a global resell + managed-security framework (17 SOCs, 2,000+ customers cited by Atos) — Fortinet now has a scaled global MSSP wrap for hybrid/multi-cloud deals."
       ],
       discover: [
         "How many branch or remote sites — and what's the MPLS or WAN spend to displace?",
