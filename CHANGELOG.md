@@ -1,4 +1,6 @@
 # Changelog
+## 2026-10-19
+- Nutanix vs Broadcom VMware: added dated caseA win — Strategix 'Customer Zero' VMware-to-Nutanix production cloud migration (Oct 19, 2026), incl. Nutanix Move workaround for Broadcom-withdrawn component. Card updated date bumped.
 
 ## 2026-10-15
 - Palo Alto NGFW vs Fortinet FortiGate: added dated Fortinet win — Atos global alliance (Oct 14, 2026) expands Fortinet resell + managed-security framework globally.
