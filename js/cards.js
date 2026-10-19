@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-10-13",
+    updated: "2026-10-19",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -242,6 +242,7 @@ const CARDS = [
         "<strong>Nutanix Move</strong> automates migration — 2,700+ VMware customers moved in FY25.",
         "<strong>NC2</strong>: take your licenses to AWS/Azure/GCP bare metal for DR and burst.",
         "<strong>Leader, 2026 Gartner MQ for Distributed Hybrid Infrastructure</strong> (Sept 30, 2026) — Ability to Execute + Completeness of Vision; NCP external-storage support now GA for Dell PowerStore, updated for Everpure FlashArray/Dell PowerFlex, limited for NetApp ONTAP.",
+        "<strong>Oct 19, 2026 — Strategix 'Customer Zero'</strong>: a 15-year VMware partner cut from Broadcom's VCSP programme is migrating its own multi-tenant production cloud to Nutanix and publishing the field data — sizing on real usage (not allocation) cut the server count ~2/3 vs lift-and-shift, and when Broadcom withdrew public access to a component the standard migration tooling relied on, Nutanix shipped a new Move method that does not need it.",
       ],
       discover: [
         "What are you actually paying per core under VCF — list or negotiated?",
