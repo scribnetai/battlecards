@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-10-19",
+    updated: "2026-10-20",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -270,7 +270,8 @@ const CARDS = [
         "The <strong>deepest ecosystem</strong> in virtualization — backup, DR, monitoring, and security vendors build for vSphere first.",
         "<strong>NSX + Aria</strong>: full-stack networking and operations that alternatives approximate, not match.",
         "Your team's <strong>existing skills</strong> — no human debt, no hiring, no productivity dip.",
-        "Broadcom's enterprise focus: top accounts get <strong>real attention and negotiated rates</strong> (~$185–275/core realized)."
+        "Broadcom's enterprise focus: top accounts get <strong>real attention and negotiated rates</strong> (~$185–275/core realized).",
+        "<strong>Oct 19, 2026 — NTT DOCOMO signs 10 years on VCF</strong>: Broadcom Japan's first 10-year comprehensive VMware agreement (licenses, technical assistance, maintenance) covering VCF, Avi Load Balancer, vDefend and Tanzu Platform plus SAM/TAM and VCF Forte Support — a flagship telco committing its private cloud (VMs, containers and AI workloads on one foundation, partnership since 2019) to VCF for a decade. Use it against the 'everyone is fleeing' narrative with large full-stack accounts; with midmarket shops, flip it — a decade of lock-in is what they should price against exit options before signing multi-year."
       ],
       discover: [
         "What's your honest all-in migration budget — licenses are only half the cost?",
