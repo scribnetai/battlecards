@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-20
+- Nutanix vs Broadcom VMware: added dated case-for-Broadcom win bullet — NTT DOCOMO 10-year VCF agreement (Oct 19, 2026). Card updated date bumped.
+
 ## 2026-10-19
 - Nutanix vs Broadcom VMware: added dated caseA win — Strategix 'Customer Zero' VMware-to-Nutanix production cloud migration (Oct 19, 2026), incl. Nutanix Move workaround for Broadcom-withdrawn component. Card updated date bumped.
 
