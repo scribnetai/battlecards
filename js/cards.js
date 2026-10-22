@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-10-20",
+    updated: "2026-10-22",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -229,6 +229,13 @@ const CARDS = [
         b: "VMware HyperArmor (announced Oct 13, 2026; GA date and pricing not stated in the release): host-layer virtual patching for ESX 8.x+ with no host reboot or in-guest agents (vendor claim), a known-good execution baseline that blocks unauthorized executables/scripts, and MFA in the ESX SSH login path. Complements vDefend's network-layer virtual patching.",
         edge: "b",
         note: "Discovery question for VCF shops: how painful are ESX patch windows and stolen-root-credential risk today? If both hurt, HyperArmor is real renewal-defense material. Do not quote it as GA or bundled until Broadcom confirms availability and licensing, and do not let Broadcom frame AHV as unprotected by omission — AHV's smaller, KVM-based attack surface is a different risk profile, not an absence of controls."
+      },
+      {
+        label: "Production AI system",
+        a: "Plans announced Oct 21, 2026 at GTC Berlin (not GA): jointly engineered Supermicro system combining standardized servers and NVIDIA GPUs with Nutanix Agentic AI (NAI) for private inference (vendor claim: lower token costs), planned Day Zero support for NVIDIA Vera CPUs starting with NKP Bare Metal, and a Netris integration for multitenant AI infrastructure with hard tenant isolation. All described as plans / when-and-if-available in Nutanix's own forward-looking statement.",
+        b: "Private AI Foundation with NVIDIA: VCF-native genAI stack with NVIDIA AI Enterprise for running AI on private cloud (existing offer).",
+        edge: "tie",
+        note: "Ask for GA dates, validated SKUs and per-token inference economics before quoting the Supermicro system — Nutanix explicitly labels it planned. Discovery question: is the AI need private inference cost control (Nutanix pitch) or genAI inside an existing VCF estate (VMware pitch)?"
       }
     ],
     takeaway: "Lead with the customer's renewal date and real per-core cost. If they're a full-stack VCF shop using NSX and Aria, defend VMware and negotiate the rate. If they're a vSphere-Standard-style shop paying for bundle they don't use, Nutanix's per-node math and free AHV usually win the 3-year TCO — but only after honest migration costing.",
@@ -588,7 +595,7 @@ const CARDS = [
     category: "Endpoint Security",
     title: "CrowdStrike Falcon vs Palo Alto Cortex XDR",
     subtitle: "The endpoint pure-play against the platform consolidator.",
-    updated: "2026-09-30",
+    updated: "2026-10-22",
     a: { vendor: "CrowdStrike", product: "Falcon", color: "#e01f26", tag: "Single-agent platform, Charlotte AI, Falcon Complete MDR." },
     b: { vendor: "Palo Alto", product: "Cortex XDR", color: "#f26522", tag: "Network+endpoint+cloud telemetry, XSIAM, Unit 42." },
     features: [
@@ -633,6 +640,13 @@ const CARDS = [
         b: "Cortex AgentiX with a claimed 98% MTTR cut (Palo Alto's claim), on XSOAR/Demisto automation heritage.",
         edge: "tie",
         note: "Both are shipping agentic SOC in 2026. Make them demo it live — slides don't triage alerts."
+      },
+      {
+        label: "AI agent security",
+        a: "Falcon Guardian integrates with NVIDIA OpenShell secure runtime (announced Oct 21, 2026); integration with NVIDIA Sentry for in-silicon enforcement on BlueField-4 DPUs is planned, with Sentry expected early 2027 (vendor claims, not yet GA).",
+        b: "Also named by NVIDIA as an OpenShell Reference Architecture partner integrating agent-security support (Oct 21, 2026) — NVIDIA lists Palo Alto Networks alongside CrowdStrike, Cisco, Fortinet and Zscaler; product-specific Cortex agent-enforcement details were not in the NVIDIA release.",
+        edge: "tie",
+        note: "Both sides are on the same NVIDIA architecture — do not let either claim exclusive OpenShell support. Ask what is GA today in the runtime vs. planned in silicon, and what policy/audit evidence an agent action produces."
       },
       {
         label: "Pricing transparency",
