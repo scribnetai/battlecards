@@ -1,4 +1,8 @@
 # Changelog
+## 2026-10-22
+- Nutanix vs Broadcom VMware: added Production AI system feature row — Nutanix plans announced Oct 21, 2026 (jointly engineered Supermicro private-inference system, planned NVIDIA Vera Day Zero support, Netris multitenant integration; all planned, not GA). Card updated date bumped.
+- CrowdStrike Falcon vs Palo Alto Cortex XDR: added AI agent security feature row — Falcon Guardian integrates NVIDIA OpenShell runtime, Sentry/BlueField-4 enforcement planned early 2027; Palo Alto also an OpenShell partner. Card updated date bumped.
+
 ## 2026-10-20
 - Nutanix vs Broadcom VMware: added dated case-for-Broadcom win bullet — NTT DOCOMO 10-year VCF agreement (Oct 19, 2026). Card updated date bumped.
 
