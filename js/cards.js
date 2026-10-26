@@ -595,7 +595,7 @@ const CARDS = [
     category: "Endpoint Security",
     title: "CrowdStrike Falcon vs Palo Alto Cortex XDR",
     subtitle: "The endpoint pure-play against the platform consolidator.",
-    updated: "2026-10-22",
+    updated: "2026-10-26",
     a: { vendor: "CrowdStrike", product: "Falcon", color: "#e01f26", tag: "Single-agent platform, Charlotte AI, Falcon Complete MDR." },
     b: { vendor: "Palo Alto", product: "Cortex XDR", color: "#f26522", tag: "Network+endpoint+cloud telemetry, XSIAM, Unit 42." },
     features: [
@@ -647,6 +647,13 @@ const CARDS = [
         b: "Also named by NVIDIA as an OpenShell Reference Architecture partner integrating agent-security support (Oct 21, 2026) — NVIDIA lists Palo Alto Networks alongside CrowdStrike, Cisco, Fortinet and Zscaler; product-specific Cortex agent-enforcement details were not in the NVIDIA release.",
         edge: "tie",
         note: "Both sides are on the same NVIDIA architecture — do not let either claim exclusive OpenShell support. Ask what is GA today in the runtime vs. planned in silicon, and what policy/audit evidence an agent action produces."
+      },
+      {
+        label: "Agentic endpoint security (XDR One)",
+        a: "Falcon's published agent-security path centers on runtime partnership: Falcon Guardian integrating with NVIDIA OpenShell, with in-silicon Sentry enforcement planned, not an endpoint-native agent inventory product.",
+        b: "Cortex XDR One (announced Oct 19, 2026; regional launch coverage Oct 26) merges Cortex XDR with Cortex Agentic Endpoint Security (Koi) in a single sensor: real-time inventory/governance of AI artifacts and shadow AI, runtime guardrails against prompt injection, and on-sensor small language models blocking fileless threats offline (Palo Alto's claims). Agentic Endpoint Security can also deploy standalone alongside a third-party EDR via the Cortex Targeted Sensor.",
+        edge: "b",
+        note: "New discovery question for every endpoint deal: what AI coding agents, copilots and MCP servers are already on your endpoints, and who inventories them? Do not let Palo Alto quote XDR One as GA without checking the current price book — its own launch blog carries a forward-looking disclaimer. CrowdStrike's counter is runtime depth via OpenShell; make both show what audit evidence an agent action produces."
       },
       {
         label: "Pricing transparency",
