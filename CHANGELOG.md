@@ -1,4 +1,7 @@
 # Changelog
+## 2026-10-26
+- CrowdStrike Falcon vs Palo Alto Cortex XDR: added Agentic endpoint security (XDR One) feature row — Cortex XDR One merges XDR with Koi-based Agentic Endpoint Security in a single sensor (announced Oct 19, 2026; regional launch coverage Oct 26), with shadow-AI inventory, prompt-injection guardrails and on-sensor SLMs; GA status flagged for price-book verification. Card updated date bumped.
+
 ## 2026-10-22
 - Nutanix vs Broadcom VMware: added Production AI system feature row — Nutanix plans announced Oct 21, 2026 (jointly engineered Supermicro private-inference system, planned NVIDIA Vera Day Zero support, Netris multitenant integration; all planned, not GA). Card updated date bumped.
 - CrowdStrike Falcon vs Palo Alto Cortex XDR: added AI agent security feature row — Falcon Guardian integrates NVIDIA OpenShell runtime, Sentry/BlueField-4 enforcement planned early 2027; Palo Alto also an OpenShell partner. Card updated date bumped.
