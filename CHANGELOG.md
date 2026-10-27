@@ -1,4 +1,8 @@
 # Changelog
+
+## 2026-10-27
+- Cohesity vs Rubrik: added "Cloud rebuild (recover as code)" feature row (edge: Cohesity).
+- Palo Alto NGFW vs Fortinet FortiGate: added "AI traffic inspection" feature row (edge: tie).
 ## 2026-10-26
 - CrowdStrike Falcon vs Palo Alto Cortex XDR: added Agentic endpoint security (XDR One) feature row — Cortex XDR One merges XDR with Koi-based Agentic Endpoint Security in a single sensor (announced Oct 19, 2026; regional launch coverage Oct 26), with shadow-AI inventory, prompt-injection guardrails and on-sensor SLMs; GA status flagged for price-book verification. Card updated date bumped.
 
