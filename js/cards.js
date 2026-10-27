@@ -304,7 +304,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-    updated: "2026-10-12",
+    updated: "2026-10-27",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -386,8 +386,14 @@ const CARDS = [
         note: "Rubrik's claim is that static tools miss chained vulnerabilities this harness catches — preview-only, so ask for a live red-team report, not a deck. Discovery question: 'where do your AI-generated codebases get security-tested before merge?' If the answer is nowhere, this is a land-and-expand wedge with the engineering org."
       },
       {
+        label: "Cloud rebuild (recover as code)",
+        a: "Cloud rebuild, validated Oct 26, 2026 for interoperability with IBM Terraform Self-Managed — the first such validation (Cohesity's claim): reads the customer's Terraform code, maps resources and restore order, backs up code and data together, recreates the declared infrastructure and then restores the latest usable application data; shows the timing gap when code and data backups differ. Available now in Data Cloud Enterprise Edition.",
+        b: "No matching Terraform-validated rebuild announced: Rubrik's cloud recovery story centers on Security Cloud's cloud-native recovery and clean-room workflows, not on rebuilding declared infrastructure from Terraform code — verify against current Rubrik docs before conceding the row.",
+        edge: "a",
+        note: "Discovery question: is your cloud estate managed as Terraform code? If yes, this is Cohesity's strongest recovery wedge — rebuilding infra plus data beats restoring data into a hand-rebuilt environment. Make Rubrik demo rebuilding declared infra and data together, not just a data restore."
+      },
+      {
         label: "Pricing",
-        a: "Slightly less costly in peer comparisons; valued for long-term retention economics.",
         b: "Premium pricing with high minimums — justified by users for cyber-resilience outcomes, but a barrier for smaller shops.",
         edge: "a",
         note: "Both are enterprise-priced. Cohesity wins on paper; Rubrik wins when the buyer prices outcomes over licenses."
@@ -741,7 +747,7 @@ const CARDS = [
     category: "Network Security",
     title: "Palo Alto NGFW vs Fortinet FortiGate",
     subtitle: "The precision platform against the performance-per-dollar machine.",
-    updated: "2026-10-15",
+    updated: "2026-10-27",
     a: { vendor: "Palo Alto", product: "NGFW", color: "#f26522", tag: "App-ID precision, PAN-OS platform, Precision AI prevention." },
     b: { vendor: "Fortinet", product: "FortiGate", color: "#ee3124", tag: "FortiASIC performance, bundled value, Security Fabric convergence." },
     features: [
@@ -807,6 +813,13 @@ const CARDS = [
         b: "Security Fabric: FortiSwitch, FortiAP, FortiNAC, FortiClient/EMS, FortiSASE — network-infrastructure convergence.",
         edge: "tie",
         note: "Palo Alto wins on SOC and cloud-security depth; Fortinet wins on network-infrastructure convergence. Incumbent footprint decides."
+      },
+      {
+        label: "AI traffic inspection",
+        a: "Prisma AIRS AI Runtime Security: Network Intercept via a software firewall (or API Intercept via REST/SDK) inspects prompts, responses, tool calls and MCP traffic in real time — prompt injection, data leakage, tool misuse and memory poisoning (Palo Alto's docs).",
+        b: "FortiGuard Inline AI Security Service (announced Oct 26, 2026): cloud-delivered to existing FortiGate firewalls; FortiAIGate guardrails inspect prompts, responses and MCP tool calls in real time and mask sensitive data; Fortinet cites 35 PII types and 50+ predefined compliance policies (Fortinet's claims).",
+        edge: "tie",
+        note: "Both sides now inspect AI traffic — the split is where it lands: Fortinet rides on firewalls the customer already owns; Palo Alto is a purpose-built platform with network and API modes. Discovery question: where does the customer's AI traffic actually flow — firewall edge or app/API layer? Don't let either side sell this as a checkbox; ask for a live prompt-injection block demo and what PII masking does to legitimate traffic."
       }
     ],
     takeaway: "Sell Palo Alto on precision and platform: App-ID, single-pane Panorama, and the Cortex/Prisma pull-through for security-mature enterprises. Sell Fortinet on economics and convergence: ASIC performance per dollar, bundled licensing, built-in SD-WAN, and the Fabric for lean teams. Dedicated SOC staff and strict app-layer policy lean Palo Alto; distributed branches and tight budgets lean Fortinet.",
