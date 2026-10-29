@@ -394,6 +394,7 @@ const CARDS = [
       },
       {
         label: "Pricing",
+        a: "Capacity-based subscription licensing — global dedupe and compression shrink the footprint you pay to protect, so the effective per-TB cost lands lower on paper.",
         b: "Premium pricing with high minimums — justified by users for cyber-resilience outcomes, but a barrier for smaller shops.",
         edge: "a",
         note: "Both are enterprise-priced. Cohesity wins on paper; Rubrik wins when the buyer prices outcomes over licenses."

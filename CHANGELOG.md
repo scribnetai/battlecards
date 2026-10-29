@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-29
+- Cohesity vs Rubrik: fixed the page-1 Pricing row — the Cohesity cell was missing from the data and rendered as "undefined"; added the capacity-based licensing summary. Caught by the nightly QA sweep.
+
 ## 2026-10-27
 - Cohesity vs Rubrik: added "Cloud rebuild (recover as code)" feature row (edge: Cohesity).
 - Palo Alto NGFW vs Fortinet FortiGate: added "AI traffic inspection" feature row (edge: tie).
