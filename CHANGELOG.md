@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-02
+- Wiz vs Palo Alto Cortex Cloud: added SaaS security posture row (Cortex Cloud SaaS Security, Nov 2026) and bumped card date.
+
 
 ## 2026-10-29
 - Cohesity vs Rubrik: fixed the page-1 Pricing row — the Cohesity cell was missing from the data and rendered as "undefined"; added the capacity-based licensing summary. Caught by the nightly QA sweep.
