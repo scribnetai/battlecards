@@ -1157,7 +1157,7 @@ const CARDS = [
     category: "Cloud Security",
     title: "Wiz vs Palo Alto Cortex Cloud",
     subtitle: "The agentless attack-path graph against the runtime-depth platform. (Cortex Cloud is the current name for Prisma Cloud.)",
-    updated: "2026-09-27",
+    updated: "2026-11-02",
     a: { vendor: "Wiz", product: "Wiz Cloud", color: "#2e5bff", tag: "Agentless CNAPP, Security Graph attack paths, Google scale. (Acquired by Google 2026 — verify.)" },
     b: { vendor: "Palo Alto", product: "Cortex Cloud", color: "#f26522", tag: "Runtime depth, WAAS, code-to-cloud breadth. (Formerly Prisma Cloud.)" },
     features: [
@@ -1216,6 +1216,13 @@ const CARDS = [
         b: "Platformization across Strata, Cortex, and Cortex Cloud/XSIAM; 'CNAPP at no additional cost' for Runtime Security customers (Palo Alto's claim).",
         edge: "b",
         note: "For existing Palo Alto estates the economics are real. For everyone else, get the Google-neutrality commitment in writing."
+      },
+      {
+        label: "SaaS security posture",
+        a: "SSPM connectors (e.g. Salesforce, Google Workspace, Snowflake) pull SaaS misconfigurations into the Security Graph; Wiz positions itself as integrating with dedicated SSPM tools rather than being one.",
+        b: "Cortex Cloud SaaS Security (Nov 2026): ~100 SaaS apps with posture, identity, data, and AI risk unified in the Cortex Cloud dashboard, plus AgentiX agentic remediation workflows (Palo Alto's claim).",
+        edge: "tie",
+        note: "Both cover SaaS posture now — count covered apps against the customer's actual SaaS estate, not the headline number, and ask whether SaaS findings join the same attack-path graph or sit in a separate console."
       },
       {
         label: "Pricing",
