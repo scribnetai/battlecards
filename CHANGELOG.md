@@ -1,4 +1,9 @@
 # Changelog
+## 2026-11-03
+- CrowdStrike Falcon vs Palo Alto Cortex XDR: added AI agent lifecycle coverage row (Guardian kill switch, Dreadnode testing, Falcon Observe).
+- Nutanix vs Broadcom VMware: added LSEG five-year VCF 9 renewal (VMware side) and NHS North East London ICB exit to Nutanix (Nutanix side) win bullets.
+- NetApp AFF vs Everpure FlashArray: added PEAK:AIO acquisition win bullet (NetApp Novus direction, no GA date yet).
+
 ## 2026-11-02
 - Wiz vs Palo Alto Cortex Cloud: added SaaS security posture row (Cortex Cloud SaaS Security, Nov 2026) and bumped card date.
 
