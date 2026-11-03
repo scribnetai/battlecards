@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-10-22",
+    updated: "2026-11-03",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -250,6 +250,7 @@ const CARDS = [
         "<strong>NC2</strong>: take your licenses to AWS/Azure/GCP bare metal for DR and burst.",
         "<strong>Leader, 2026 Gartner MQ for Distributed Hybrid Infrastructure</strong> (Sept 30, 2026) — Ability to Execute + Completeness of Vision; NCP external-storage support now GA for Dell PowerStore, updated for Everpure FlashArray/Dell PowerFlex, limited for NetApp ONTAP.",
         "<strong>Oct 19, 2026 — Strategix 'Customer Zero'</strong>: a 15-year VMware partner cut from Broadcom's VCSP programme is migrating its own multi-tenant production cloud to Nutanix and publishing the field data — sizing on real usage (not allocation) cut the server count ~2/3 vs lift-and-shift, and when Broadcom withdrew public access to a component the standard migration tooling relied on, Nutanix shipped a new Move method that does not need it.",
+        "<strong>Nov 2026 — NHS North East London ICB exits VMware + NetApp for Nutanix</strong>: 22 NetApp nodes consolidated to eight Nutanix nodes on Nutanix Cloud Infrastructure, citing cost savings and single-pane management — a public-sector consolidation story, not just a hypervisor swap.",
       ],
       discover: [
         "What are you actually paying per core under VCF — list or negotiated?",
@@ -278,7 +279,8 @@ const CARDS = [
         "<strong>NSX + Aria</strong>: full-stack networking and operations that alternatives approximate, not match.",
         "Your team's <strong>existing skills</strong> — no human debt, no hiring, no productivity dip.",
         "Broadcom's enterprise focus: top accounts get <strong>real attention and negotiated rates</strong> (~$185–275/core realized).",
-        "<strong>Oct 19, 2026 — NTT DOCOMO signs 10 years on VCF</strong>: Broadcom Japan's first 10-year comprehensive VMware agreement (licenses, technical assistance, maintenance) covering VCF, Avi Load Balancer, vDefend and Tanzu Platform plus SAM/TAM and VCF Forte Support — a flagship telco committing its private cloud (VMs, containers and AI workloads on one foundation, partnership since 2019) to VCF for a decade. Use it against the 'everyone is fleeing' narrative with large full-stack accounts; with midmarket shops, flip it — a decade of lock-in is what they should price against exit options before signing multi-year."
+        "<strong>Oct 19, 2026 — NTT DOCOMO signs 10 years on VCF</strong>: Broadcom Japan's first 10-year comprehensive VMware agreement (licenses, technical assistance, maintenance) covering VCF, Avi Load Balancer, vDefend and Tanzu Platform plus SAM/TAM and VCF Forte Support — a flagship telco committing its private cloud (VMs, containers and AI workloads on one foundation, partnership since 2019) to VCF for a decade. Use it against the 'everyone is fleeing' narrative with large full-stack accounts; with midmarket shops, flip it — a decade of lock-in is what they should price against exit options before signing multi-year.",
+        "<strong>Nov 2026 — LSEG renews VMware for five years on VCF 9</strong>: London Stock Exchange Group extends with Broadcom, with professional services to roll out VCF 9 across its private cloud — use against the 'everyone is fleeing' narrative with full-stack accounts."
       ],
       discover: [
         "What's your honest all-in migration budget — licenses are only half the cost?",
@@ -463,7 +465,7 @@ const CARDS = [
     category: "Primary Storage",
     title: "NetApp AFF vs Everpure FlashArray",
     subtitle: "ONTAP's unified multiprotocol scale-out against Everpure's Evergreen simplicity.",
-    updated: "2026-10-12",
+    updated: "2026-11-03",
     a: { vendor: "NetApp", product: "AFF", color: "#0067c5", tag: "Unified block+file+object, Data Fabric cloud story, massive scale-out." },
     b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
     features: [
@@ -548,7 +550,8 @@ const CARDS = [
         "<strong>Scale-out to 24 nodes</strong> (12 HA pairs): add performance and capacity non-disruptively instead of outgrowing a dual-controller box.",
         "<strong>Autonomous Ransomware Protection</strong> with ML detection, plus SnapLock compliance WORM for regulated data.",
         "Decades of enterprise trust and the largest NAS installed base — the known quantity your team already knows.",
-        "<strong>Keystone Sovereignty (Oct 2026)</strong>: data, logs, backups, telemetry, and support stay inside customer-specified geographic boundaries with EU-based support \u2014 a ready-made answer to regulated-industry sovereignty RFPs."
+        "<strong>Keystone Sovereignty (Oct 2026)</strong>: data, logs, backups, telemetry, and support stay inside customer-specified geographic boundaries with EU-based support \u2014 a ready-made answer to regulated-industry sovereignty RFPs.",
+        "<strong>Nov 2, 2026 — NetApp completes PEAK:AIO acquisition</strong>: metadata and parallel file system technology feeding the planned NetApp Novus AI-scale architecture into ONTAP — no GA date or pricing announced yet, so sell it as direction, not a shippable product."
       ],
       discover: [
         "How much of your data is file vs block — and are you managing them on separate systems today?",
@@ -602,7 +605,7 @@ const CARDS = [
     category: "Endpoint Security",
     title: "CrowdStrike Falcon vs Palo Alto Cortex XDR",
     subtitle: "The endpoint pure-play against the platform consolidator.",
-    updated: "2026-10-26",
+    updated: "2026-11-03",
     a: { vendor: "CrowdStrike", product: "Falcon", color: "#e01f26", tag: "Single-agent platform, Charlotte AI, Falcon Complete MDR." },
     b: { vendor: "Palo Alto", product: "Cortex XDR", color: "#f26522", tag: "Network+endpoint+cloud telemetry, XSIAM, Unit 42." },
     features: [
@@ -661,6 +664,13 @@ const CARDS = [
         b: "Cortex XDR One (announced Oct 19, 2026; regional launch coverage Oct 26) merges Cortex XDR with Cortex Agentic Endpoint Security (Koi) in a single sensor: real-time inventory/governance of AI artifacts and shadow AI, runtime guardrails against prompt injection, and on-sensor small language models blocking fileless threats offline (Palo Alto's claims). Agentic Endpoint Security can also deploy standalone alongside a third-party EDR via the Cortex Targeted Sensor.",
         edge: "b",
         note: "New discovery question for every endpoint deal: what AI coding agents, copilots and MCP servers are already on your endpoints, and who inventories them? Do not let Palo Alto quote XDR One as GA without checking the current price book — its own launch blog carries a forward-looking disclaimer. CrowdStrike's counter is runtime depth via OpenShell; make both show what audit evidence an agent action produces."
+      },
+      {
+        label: "AI agent lifecycle coverage",
+        a: "Guardian runtime enforcement (incl. a Nov 3, 2026 kill switch that terminates misbehaving agents) plus Dreadnode pre-deployment testing (100+ attack strategies, mapped to OWASP, MITRE ATLAS and NIST) plus Falcon Observe (Fiddler) tracing reasoning paths, tool calls, drift and token usage — acquisitions announced Nov 3, 2026, expected GA Q4 FY27, not shipping today (vendor claims; CrowdStrike did not disclose prices, ~$495M combined reported).",
+        b: "No equivalent announced pre-deployment agent-testing or post-hoc agent-observability product; the Cortex agent story centers on XDR One endpoint inventory and guardrails (see the 'Agentic endpoint security' row).",
+        edge: "a",
+        note: "Sell the lifecycle, not just the runtime: test before deploy, enforce live, explain afterward. Discovery question: when a regulator asks what an agent did last week, what evidence do you produce today? Do not quote Falcon Observe or Dreadnode testing as GA — Q4 FY27 is the vendor's own timeline."
       },
       {
         label: "Pricing transparency",
