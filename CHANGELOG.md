@@ -1,4 +1,8 @@
 # Changelog
+
+## 2026-11-05
+- Nutanix vs Broadcom VMware: updated Hypervisor cost row — vSphere Express is GA (128-core standalone tier, no vSAN/DRS, pricing unpublished); legacy standalone SKUs end Oct 11, 2027.
+
 ## 2026-11-03
 - CrowdStrike Falcon vs Palo Alto Cortex XDR: added AI agent lifecycle coverage row (Guardian kill switch, Dreadnode testing, Falcon Observe).
 - Nutanix vs Broadcom VMware: added LSEG five-year VCF 9 renewal (VMware side) and NHS North East London ICB exit to Nutanix (Nutanix side) win bullets.
@@ -102,4 +106,3 @@
 ## 2026-09-29 — Prompts removed from app-switcher dropdown
 
 - Removed the Prompts entry from the in-app dropdown menu so it lists only the SE-job apps (plus the scribnet.io home link). The prompts page itself is untouched.
-
