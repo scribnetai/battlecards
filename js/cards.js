@@ -142,7 +142,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-11-03",
+    updated: "2026-11-05",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -156,9 +156,9 @@ const CARDS = [
       {
         label: "Hypervisor cost",
         a: "AHV (KVM-based) included free with the platform.",
-        b: "ESXi bundled inside VCF/VVF subscription. Standalone vSphere Standard was discontinued with no renewal path — but Broadcom now says an updated vSphere Standard is coming, details expected Oct 13–14 at VMware Explore Frankfurt (announced, not yet GA).",
+        b: "ESXi bundled inside VCF/VVF subscription. Standalone returns as VMware vSphere Express (GA Nov 2, 2026, announced Nov 4): a single fixed subscription SKU for up to 128 cores per customer, including vCenter Standard, ESX, Distributed Switch, vMotion, HA and vTPM 2.0 — but no vSAN or DRS, and one bundle max per customer. Broadcom has not published pricing. Legacy standalone vSphere Standard/Enterprise Plus reach end of service Oct 11, 2027 (EEA: on sale until Oct 31, 2027, extended support to Oct 31, 2028).",
         edge: "a",
-        note: "Watch what the refreshed vSphere Standard actually ships: ask whether it restores a real renewal path for small shops, at what price, and whether renewal terms are predictable. Until it ships, vSphere Standard shops are still being pushed toward VCF."
+        note: "Express finally gives small VMware shops a standalone answer — but ask the price before celebrating: Broadcom hasn't published one, and the 128-core cap, one-bundle limit and no vSAN/DRS mean it fits simple virtualization only. Discovery question: does the customer need just a hypervisor, or the HCI platform Nutanix bundles? If they need storage and networking too, the Express math changes fast."
       },
       {
         label: "Management",
