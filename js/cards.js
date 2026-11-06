@@ -11,7 +11,7 @@ const CARDS = [
     category: "Primary Storage",
     title: "Dell PowerStore vs Everpure FlashArray",
     subtitle: "Midrange all-flash arrays: Dell's efficiency guarantee against Everpure's Evergreen simplicity.",
-    updated: "2026-09-27",
+  updated: "2026-11-06",
     a: { vendor: "Dell", product: "PowerStore", color: "#2f9be8", tag: "Efficiency in writing, VMware-native, aggressive pricing." },
     b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
     features: [
@@ -77,6 +77,13 @@ const CARDS = [
         b: "Consistently top-rated in customer surveys; proactive support via Pure1 telemetry.",
         edge: "b",
         note: "Acknowledge it. Then pivot: your VAR support wraps either array — that's the differentiator you control."
+      },
+      {
+        label: "Quantum-safe encryption",
+        a: "PowerStore software (Nov 2026 release) adds quantum-safe data-in-flight encryption over Fibre Channel, plus a Post-Quantum Readiness Assessment service (Nov 2026).",
+        b: "FlashArray embeds Broadcom Emulex SecureHBA for end-to-end PQC-safe in-flight FC encryption since March 2026 — hardware-offloaded, ML-KEM/ML-DSA key negotiation, no measurable performance penalty in third-party testing (vendor claim).",
+        edge: "b",
+        note: "Everpure shipped this first, Dell is catching up — don't let Dell present quantum-safe as a differentiator. Discovery question: is the encryption end-to-end (host HBA to array) or array-side only, and what does the customer's CNSA 2.0 timeline actually require? Harvest-now-decrypt-later is the pitch on both sides; the buying reason in 2026 is compliance timelines, not an imminent quantum break."
       }
     ],
     takeaway: "Sell Dell on economics and VMware depth: guaranteed efficiency in writing, AppsON, and bundle pricing. Sell Everpure on operational simplicity: Evergreen, Pure1, and support. The customer profile decides — capex VMware shops lean Dell, simplicity-first lean Everpure.",
@@ -142,7 +149,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-    updated: "2026-11-05",
+  updated: "2026-11-06",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -251,6 +258,7 @@ const CARDS = [
         "<strong>Leader, 2026 Gartner MQ for Distributed Hybrid Infrastructure</strong> (Sept 30, 2026) — Ability to Execute + Completeness of Vision; NCP external-storage support now GA for Dell PowerStore, updated for Everpure FlashArray/Dell PowerFlex, limited for NetApp ONTAP.",
         "<strong>Oct 19, 2026 — Strategix 'Customer Zero'</strong>: a 15-year VMware partner cut from Broadcom's VCSP programme is migrating its own multi-tenant production cloud to Nutanix and publishing the field data — sizing on real usage (not allocation) cut the server count ~2/3 vs lift-and-shift, and when Broadcom withdrew public access to a component the standard migration tooling relied on, Nutanix shipped a new Move method that does not need it.",
         "<strong>Nov 2026 — NHS North East London ICB exits VMware + NetApp for Nutanix</strong>: 22 NetApp nodes consolidated to eight Nutanix nodes on Nutanix Cloud Infrastructure, citing cost savings and single-pane management — a public-sector consolidation story, not just a hypervisor swap.",
+        "<strong>Nov 5, 2026 — Expedient adds multitenant cloud on Nutanix</strong>: the first Nutanix Premier Service Provider now offers a fully managed multitenant cloud on Nutanix SP Central — same AHV platform across multitenant, dedicated, edge and DR — lowering the managed-cloud on-ramp for smaller customers VMware's VCSP changes stranded.",
       ],
       discover: [
         "What are you actually paying per core under VCF — list or negotiated?",
@@ -306,7 +314,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-    updated: "2026-10-27",
+  updated: "2026-11-06",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -393,6 +401,13 @@ const CARDS = [
         b: "No matching Terraform-validated rebuild announced: Rubrik's cloud recovery story centers on Security Cloud's cloud-native recovery and clean-room workflows, not on rebuilding declared infrastructure from Terraform code — verify against current Rubrik docs before conceding the row.",
         edge: "a",
         note: "Discovery question: is your cloud estate managed as Terraform code? If yes, this is Cohesity's strongest recovery wedge — rebuilding infra plus data beats restoring data into a hand-rebuilt environment. Make Rubrik demo rebuilding declared infra and data together, not just a data restore."
+      },
+      {
+        label: "Hosted NAS protection",
+        a: "NAS protection runs on the customer's Cohesity cluster or cloud deployment — the customer owns and sizes the backup storage behind it.",
+        b: "Rubrik-Hosted Protection for On-Premise Unstructured Data (GA Nov 3, 2026): Rubrik operates the backup storage, capacity and updates in its cloud via NAS Cloud Direct; lightweight data movers on the customer's servers connect NAS to it, so no backup appliances to buy, rack or maintain. Backups land in an isolated, immutable vault on a separate identity domain, with anomaly detection on every backup and recovery to a different array, cloud storage, or an isolated recovery environment.",
+        edge: "b",
+        note: "This is Rubrik's answer to the hardware objection in NAS deals — it turns a capex-heavy backup conversation into opex. Discovery question: how much unstructured data (imaging, seismic, design files, AI datasets) sits unprotected because the hardware business case never cleared? Caveat: sensitive-data discovery for primary shares is still in preview, so don't quote it as GA."
       },
       {
         label: "Pricing",
