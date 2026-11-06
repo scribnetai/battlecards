@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-06
+- Cohesity vs Rubrik: added Hosted NAS protection row — Rubrik-Hosted Protection for On-Premise Unstructured Data is GA (Nov 3, 2026), hosted backup storage with no customer hardware.
+- Dell PowerStore vs Everpure FlashArray: added Quantum-safe encryption row — PowerStore adds quantum-safe FC encryption (Nov 2026); Everpure shipped PQC-safe FC encryption via Emulex SecureHBA in March 2026.
+- Nutanix vs Broadcom VMware: added Expedient multitenant cloud win bullet (Nov 5, 2026, Nutanix SP Central).
+
 ## 2026-11-05
 - Nutanix vs Broadcom VMware: updated Hypervisor cost row — vSphere Express is GA (128-core standalone tier, no vSAN/DRS, pricing unpublished); legacy standalone SKUs end Oct 11, 2027.
 
