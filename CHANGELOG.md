@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-10
+- Nutanix vs Broadcom VMware: added 'Kubernetes-native VM management' feature row (Broadcom VM API accepted into CNCF Sandbox; 20+ partner solutions validated for VKS).
+
+
 ## 2026-11-06
 - Cohesity vs Rubrik: added Hosted NAS protection row — Rubrik-Hosted Protection for On-Premise Unstructured Data is GA (Nov 3, 2026), hosted backup storage with no customer hardware.
 - Dell PowerStore vs Everpure FlashArray: added Quantum-safe encryption row — PowerStore adds quantum-safe FC encryption (Nov 2026); Everpure shipped PQC-safe FC encryption via Emulex SecureHBA in March 2026.
