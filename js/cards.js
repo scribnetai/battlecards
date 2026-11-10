@@ -149,7 +149,7 @@ const CARDS = [
     category: "HCI & Virtualization",
     title: "Nutanix vs Broadcom VMware",
     subtitle: "The 2026 virtualization reset: per-node simplicity against the entrenched per-core incumbent.",
-  updated: "2026-11-06",
+  updated: "2026-11-10",
     a: { vendor: "Nutanix", product: "Cloud Platform", color: "#2f7de8", tag: "AHV included free, per-node pricing, Prism simplicity." },
     b: { vendor: "Broadcom", product: "VMware VCF", color: "#e03a3a", tag: "The full private-cloud stack — if you use all of it." },
     features: [
@@ -243,6 +243,13 @@ const CARDS = [
         b: "Private AI Foundation with NVIDIA: VCF-native genAI stack with NVIDIA AI Enterprise for running AI on private cloud (existing offer).",
         edge: "tie",
         note: "Ask for GA dates, validated SKUs and per-token inference economics before quoting the Supermicro system — Nutanix explicitly labels it planned. Discovery question: is the AI need private inference cost control (Nutanix pitch) or genAI inside an existing VCF estate (VMware pitch)?"
+      },
+      {
+        label: "Kubernetes-native VM management",
+        a: "Nutanix Kubernetes Platform (NKP): a turnkey, CNCF-based platform for containers, VMs, data and AI anywhere — VMs and containers run together on the Nutanix stack with no separate Kubernetes distribution to stand up.",
+        b: "VM API accepted into CNCF Sandbox (Nov 9, 2026): a vendor-neutral Kubernetes API for provisioning and managing VMs across heterogeneous infrastructure providers, co-chaired Workload Conformance Working Group. VKS is the CNCF-certified Kubernetes runtime built into VCF — VMs, containers and AI workloads share the same clusters and control plane, no extra infra layer. 20+ new partner solutions validated for VKS (Datadog, Splunk, CrowdStrike Falcon, Dell PowerProtect Data Manager, Scality RING).",
+        edge: "b",
+        note: "Broadcom is trying to own the open standard for K8s-native VMs — that is a real story for platform-team buyers. But VM API is Sandbox-stage, not a shipped product, and VKS still means buying into VCF. Discovery question: does the customer want VMs and containers on one control plane, and are they standardizing on open K8s APIs or on one vendor's platform? NKP's answer is a complete platform, not an API standard — different layer, don't let either side claim the other's turf."
       }
     ],
     takeaway: "Lead with the customer's renewal date and real per-core cost. If they're a full-stack VCF shop using NSX and Aria, defend VMware and negotiate the rate. If they're a vSphere-Standard-style shop paying for bundle they don't use, Nutanix's per-node math and free AHV usually win the 3-year TCO — but only after honest migration costing.",
