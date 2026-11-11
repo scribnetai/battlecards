@@ -321,7 +321,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-  updated: "2026-11-06",
+  updated: "2026-11-11",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -417,6 +417,13 @@ const CARDS = [
         note: "This is Rubrik's answer to the hardware objection in NAS deals — it turns a capex-heavy backup conversation into opex. Discovery question: how much unstructured data (imaging, seismic, design files, AI datasets) sits unprotected because the hardware business case never cleared? Caveat: sensitive-data discovery for primary shares is still in preview, so don't quote it as GA."
       },
       {
+        label: "Autonomous recovery for AWS cloud apps",
+        a: "No matching automated, application-level recovery for AWS cloud-native services announced: Cohesity's cloud story is Cloud rebuild (Terraform-validated Oct 26, 2026), which recreates declared infrastructure from code and then restores data — a different motion from Rubrik's pre-computed clean-point app recovery. Verify against current Cohesity docs before conceding the row.",
+        b: "Autonomous Business Recovery (ABR) for AWS Cloud Applications (GA Nov 10, 2026; announced at Rubrik Forward): discovers, protects, and recovers whole AWS applications — EC2, RDS, EKS, ECR, Lambda, S3 — in dependency order from a pre-computed clean point via the Preemptive Recovery Engine. The expanded detection/investigation bundle (near real-time deletion detection, blast-radius reporting, surgical recovery) is announced but not GA — expected in the coming months.",
+        edge: "b",
+        note: "GA now, so it is sellable — but keep the two halves straight: ABR itself is GA, the deletion-detection/blast-radius/surgical-recovery bundle is not yet. Discovery question: 'for your AWS apps, is recovery a runbook or a button?' Make Cohesity demo the same AWS-native app (EKS + Lambda + S3) recovered as one unit, not VM by VM."
+      },
+      {
         label: "Pricing",
         a: "Capacity-based subscription licensing — global dedupe and compression shrink the footprint you pay to protect, so the effective per-TB cost lands lower on paper.",
         b: "Premium pricing with high minimums — justified by users for cyber-resilience outcomes, but a barrier for smaller shops.",
@@ -487,7 +494,7 @@ const CARDS = [
     category: "Primary Storage",
     title: "NetApp AFF vs Everpure FlashArray",
     subtitle: "ONTAP's unified multiprotocol scale-out against Everpure's Evergreen simplicity.",
-    updated: "2026-11-03",
+    updated: "2026-11-11",
     a: { vendor: "NetApp", product: "AFF", color: "#0067c5", tag: "Unified block+file+object, Data Fabric cloud story, massive scale-out." },
     b: { vendor: "Everpure", product: "FlashArray", color: "#f26a21", tag: "Evergreen upgrades, Pure1 simplicity, top-rated support. (Pure Storage rebranded Everpure.)" },
     features: [
@@ -573,6 +580,7 @@ const CARDS = [
         "<strong>Autonomous Ransomware Protection</strong> with ML detection, plus SnapLock compliance WORM for regulated data.",
         "Decades of enterprise trust and the largest NAS installed base — the known quantity your team already knows.",
         "<strong>Keystone Sovereignty (Oct 2026)</strong>: data, logs, backups, telemetry, and support stay inside customer-specified geographic boundaries with EU-based support \u2014 a ready-made answer to regulated-industry sovereignty RFPs.",
+        "<strong>Nov 10, 2026 — Nebul becomes the first neocloud to adopt NetApp Novus</strong>: the European AI-native cloud provider is building its sovereign AI cloud on Novus (GA since its Sept 29, 2026 launch), designed for up to 100 TB/s aggregate throughput with performance, capacity, and concurrency scaling independently under one namespace.",
         "<strong>Nov 2, 2026 — NetApp completes PEAK:AIO acquisition</strong>: metadata and parallel file system technology feeding the planned NetApp Novus AI-scale architecture into ONTAP — no GA date or pricing announced yet, so sell it as direction, not a shippable product."
       ],
       discover: [
