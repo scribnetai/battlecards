@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-11
+- Cohesity vs Rubrik: added "Autonomous recovery for AWS cloud apps" row (Rubrik ABR for AWS Cloud Applications GA).
+- NetApp AFF vs Everpure FlashArray: added Nov 10, 2026 Nebul/Novus win bullet (first neocloud on Novus).
+
+
 ## 2026-11-10
 - Nutanix vs Broadcom VMware: added 'Kubernetes-native VM management' feature row (Broadcom VM API accepted into CNCF Sandbox; 20+ partner solutions validated for VKS).
 
