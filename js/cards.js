@@ -321,7 +321,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-  updated: "2026-11-11",
+  updated: "2026-11-12",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -422,6 +422,13 @@ const CARDS = [
         b: "Autonomous Business Recovery (ABR) for AWS Cloud Applications (GA Nov 10, 2026; announced at Rubrik Forward): discovers, protects, and recovers whole AWS applications — EC2, RDS, EKS, ECR, Lambda, S3 — in dependency order from a pre-computed clean point via the Preemptive Recovery Engine. The expanded detection/investigation bundle (near real-time deletion detection, blast-radius reporting, surgical recovery) is announced but not GA — expected in the coming months.",
         edge: "b",
         note: "GA now, so it is sellable — but keep the two halves straight: ABR itself is GA, the deletion-detection/blast-radius/surgical-recovery bundle is not yet. Discovery question: 'for your AWS apps, is recovery a runbook or a button?' Make Cohesity demo the same AWS-native app (EKS + Lambda + S3) recovered as one unit, not VM by VM."
+      },
+      {
+        label: "Google Cloud analytics protection",
+        a: "BigQuery listed in DataProtect supported sources: object-level recovery of a dropped table or dataset, policy-driven cross-project retention well beyond native 7-day Time Travel, plus Cloud Storage, GKE and Compute Engine coverage; FortKnox cyber vault available on Google Cloud.",
+        b: "Agentless, immutable BigQuery backup GA Nov 10, 2026: whole-dataset or single-table restore with views and routines intact, backups in the customer's own GCS bucket or Rubrik Cloud Vault, unlimited retention past native Time Travel. Google Cloud Storage protection announced, GA expected in the coming months — not shipping yet.",
+        edge: "tie",
+        note: "Both cover BigQuery now — the split is maturity, not coverage: Cohesity's is established, Rubrik's just went GA with an agentless setup story. Make both demo a dropped-table restore and confirm retention past native Time Travel. Don't let Rubrik sell GCS protection as shipping — it's announced, not GA."
       },
       {
         label: "Pricing",
