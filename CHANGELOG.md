@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-12
+- Cohesity vs Rubrik: added "Google Cloud analytics protection" row (Rubrik BigQuery backup GA; GCS protection announced, not yet GA).
+
+
 ## 2026-11-11
 - Cohesity vs Rubrik: added "Autonomous recovery for AWS cloud apps" row (Rubrik ABR for AWS Cloud Applications GA).
 - NetApp AFF vs Everpure FlashArray: added Nov 10, 2026 Nebul/Novus win bullet (first neocloud on Novus).
