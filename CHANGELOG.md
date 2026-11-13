@@ -1,4 +1,6 @@
 # Changelog
+## 2026-11-13
+- Cohesity vs Rubrik: added "Microsoft ecosystem & AI data access" row (Azure Blob/Data Lake/AKS protection, Entra ID recovery, Gaia Catalog to Databricks).
 
 ## 2026-11-12
 - Cohesity vs Rubrik: added "Google Cloud analytics protection" row (Rubrik BigQuery backup GA; GCS protection announced, not yet GA).
