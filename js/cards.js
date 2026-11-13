@@ -321,7 +321,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-  updated: "2026-11-12",
+  updated: "2026-11-13",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -429,6 +429,13 @@ const CARDS = [
         b: "Agentless, immutable BigQuery backup GA Nov 10, 2026: whole-dataset or single-table restore with views and routines intact, backups in the customer's own GCS bucket or Rubrik Cloud Vault, unlimited retention past native Time Travel. Google Cloud Storage protection announced, GA expected in the coming months — not shipping yet.",
         edge: "tie",
         note: "Both cover BigQuery now — the split is maturity, not coverage: Cohesity's is established, Rubrik's just went GA with an agentless setup story. Make both demo a dropped-table restore and confirm retention past native Time Travel. Don't let Rubrik sell GCS protection as shipping — it's announced, not GA."
+      },
+      {
+        label: "Microsoft ecosystem & AI data access",
+        a: "Nov 12, 2026: extended Azure protection — Blob Storage, Data Lake Storage and AKS with application-consistent backups and granular Kubernetes recovery — plus Entra ID recovery covering permanently deleted objects (with password reset on restore) and Intune configuration objects. Gaia Catalog publishes curated backup data into Azure Databricks as an external data source while the data stays in Cohesity Data Cloud — no ETL pipelines to move or duplicate it. GitHub and Azure DevOps protection is preview-only.",
+        b: "Azure and Microsoft 365 protection is core to Security Cloud as well (Azure VMs/SQL, M365 apps including Entra ID) — the gap is the AI-data angle: no announced equivalent of publishing backup data in place into Databricks without ETL. Verify current M365/Azure coverage and Entra ID restore depth against Rubrik docs before conceding the row.",
+        edge: "a",
+        note: "Discovery question: does the customer want backup data to feed AI and analytics without copying it out — and how would they recover a deleted Entra ID object today? Caveat: the GitHub/Azure DevOps protection is preview, not GA — don't quote it as shipping."
       },
       {
         label: "Pricing",
