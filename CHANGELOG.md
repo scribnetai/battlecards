@@ -1,4 +1,6 @@
 # Changelog
+## 2026-11-19
+- Cohesity vs Rubrik: added "DevOps protection (GitHub / Azure DevOps)" row (Rubrik DevOps Protection Enterprise Edition vs Cohesity preview; both pre-GA).
 ## 2026-11-13
 - Cohesity vs Rubrik: added "Microsoft ecosystem & AI data access" row (Azure Blob/Data Lake/AKS protection, Entra ID recovery, Gaia Catalog to Databricks).
 
