@@ -321,7 +321,7 @@ const CARDS = [
     category: "Data Protection",
     title: "Cohesity vs Rubrik",
     subtitle: "Cyber-resilient backup at enterprise scale: efficiency and breadth against simplicity and RTO.",
-  updated: "2026-11-13",
+  updated: "2026-11-19",
     a: { vendor: "Cohesity", product: "DataProtect", color: "#14b8a6", tag: "One platform: backup, DR, cyber recovery — with global efficiency." },
     b: { vendor: "Rubrik", product: "Security Cloud", color: "#8b7cf6", tag: "Security-first backup with the simplest day-one experience." },
     features: [
@@ -436,6 +436,13 @@ const CARDS = [
         b: "Azure and Microsoft 365 protection is core to Security Cloud as well (Azure VMs/SQL, M365 apps including Entra ID) — the gap is the AI-data angle: no announced equivalent of publishing backup data in place into Databricks without ETL. Verify current M365/Azure coverage and Entra ID restore depth against Rubrik docs before conceding the row.",
         edge: "a",
         note: "Discovery question: does the customer want backup data to feed AI and analytics without copying it out — and how would they recover a deleted Entra ID object today? Caveat: the GitHub/Azure DevOps protection is preview, not GA — don't quote it as shipping."
+      },
+      {
+        label: "DevOps protection (GitHub / Azure DevOps)",
+        a: "GitHub and Azure DevOps protection in preview (announced Nov 12, 2026): repositories plus full Azure DevOps organizations — pull requests, boards, wikis, pipelines. Preview-only; not GA.",
+        b: "DevOps Protection Enterprise Edition (announced Nov 18, 2026): anomaly detection on audit logs, blast-radius investigation across repos, commits, pipelines, pull requests and settings, and surgical recovery of only the attacker's changes from air-gapped, immutable backups. GA expected in the coming months — not shipping yet.",
+        edge: "tie",
+        note: "Rubrik announced the fuller workflow six days after Cohesity's preview — but both are pre-GA, so neither is sellable today. Discovery question: if a poisoned commit or stolen token hit your repos tonight, how would you roll back just the attacker's changes? Make both demo that rollback, not a backup list."
       },
       {
         label: "Pricing",
