@@ -656,7 +656,7 @@ const CARDS = [
     category: "Endpoint Security",
     title: "CrowdStrike Falcon vs Palo Alto Cortex XDR",
     subtitle: "The endpoint pure-play against the platform consolidator.",
-    updated: "2026-11-03",
+    updated: "2026-11-23",
     a: { vendor: "CrowdStrike", product: "Falcon", color: "#e01f26", tag: "Single-agent platform, Charlotte AI, Falcon Complete MDR." },
     b: { vendor: "Palo Alto", product: "Cortex XDR", color: "#f26522", tag: "Network+endpoint+cloud telemetry, XSIAM, Unit 42." },
     features: [
@@ -756,6 +756,7 @@ const CARDS = [
         "<strong>Charlotte Agentic SOAR</strong>: agentic SOC with bidirectional MCP and human-in-the-loop autonomy (2026).",
         "<strong>Next-Gen SIEM</strong>: retire the legacy SIEM on the same agent — claimed up to 50% storage cost reduction (claim).",
         "<strong>Falcon in the OpenAI Marketplace</strong> (Sept 29, 2026) — eligible OpenAI customers can buy Falcon with existing OpenAI commitments; Falcon Guardian extends runtime protection to Codex agents.",
+        "<strong>Acquiring Zscaler (announced Nov 23, 2026)</strong>: ~$43.9B all-stock deal adds Zero Trust SASE and 50% of the Fortune 500 to the Falcon platform; close expected H2 FY28, so until then it is a roadmap and Falcon Flex contracting story, not a shipped integration — Palo Alto's native-network edge narrows only after close.",
       ],
       discover: [
         "How are you stitching endpoint, identity, and cloud signals today — one console or several?",
@@ -949,7 +950,7 @@ const CARDS = [
     category: "SASE",
     title: "Zscaler vs Palo Alto Prisma Access",
     subtitle: "The born-cloud zero-trust exchange against the PAN-OS policy cloud.",
-    updated: "2026-10-07",
+    updated: "2026-11-23",
     a: { vendor: "Zscaler", product: "Zero Trust Exchange", color: "#0090d4", tag: "Born-cloud SSE, true ZTNA, simple per-user licensing." },
     b: { vendor: "Palo Alto", product: "Prisma Access", color: "#f26522", tag: "PAN-OS policy in the cloud, native SD-WAN, platform scale. (Prisma SASE.)" },
     features: [
@@ -1033,7 +1034,8 @@ const CARDS = [
         "<strong>Largest stated inline footprint</strong>: 150+ ZENs (claim) with 99.999% availability, peered adjacent to M365 and AWS.",
         "<strong>Simpler licensing</strong>: per-user bundles vs per-user-plus-bandwidth-plus-location BOMs — fewer renewal surprises.",
         "<strong>Analyst momentum</strong>: 2026 Gartner SASE MQ Leader plus a 5th straight year as SSE MQ Leader.",
-        "<strong>No hardware in the data path</strong>: pure cloud ops — VPN retirement and firewall consolidation in one motion."
+        "<strong>No hardware in the data path</strong>: pure cloud ops — VPN retirement and firewall consolidation in one motion.",
+        "<strong>Being acquired by CrowdStrike (announced Nov 23, 2026)</strong>: ~$43.9B all-stock deal puts the Zero Trust Exchange on the Falcon platform with one Flex contract and combined device-plus-network telemetry in Next-Gen SIEM; close expected H2 FY28 and both companies operate independently until then.",
       ],
       discover: [
         "How much of the workforce is remote or hybrid — and how much still backhauls through VPN concentrators?",
