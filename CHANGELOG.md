@@ -1,4 +1,9 @@
 # Changelog
+
+## 2026-11-23
+- CrowdStrike Falcon vs Palo Alto Cortex XDR: added dated win bullet on the announced Zscaler acquisition (Nov 23, 2026).
+- Zscaler vs Palo Alto Prisma Access: added dated win bullet on Zscaler being acquired by CrowdStrike (announced Nov 23, 2026).
+
 ## 2026-11-19
 - Cohesity vs Rubrik: added "DevOps protection (GitHub / Azure DevOps)" row (Rubrik DevOps Protection Enterprise Edition vs Cohesity preview; both pre-GA).
 ## 2026-11-13
